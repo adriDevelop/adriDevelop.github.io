@@ -1,25 +1,21 @@
-# Welcome to MkDocs
+# Adrián Velasco Carrasco
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Práctica 2.1 - Instalación y configuración de un servidor web Nginx
 
-## Commands
+### Instalación
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Para instalar el servidor de nginx en nuestra Debian debemos de realizar los siguientes comandos: <br>
+`sudo apt update`
+`sudo apt install nginx`
 
-## Project layout
+Y comprobamos que se ha instalado y que está funcionando correcamente: <br>
+`systemctl status nginx`
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+### Creación de las carpetas del sitio web
 
+Vamos a crear nuestra carpeta para nuestro sitio web dentro de /var/www ya que típicamente, estas carpetas almacenan los sitios.
+Para crearla haremos uso del comando: `sudo mkdir -p /var/www/nombre_web/html`
 
-## Adrian Velasco Carrasco
+Y dentro de esta carpeta, debemos clonar el repositorio: `https://github.com/cloudacademy/static-website-example`
 
-  mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Además, haremos que el propietario de esta carpeta y todo lo que haya
