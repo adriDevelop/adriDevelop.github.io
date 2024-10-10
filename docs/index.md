@@ -1,17 +1,33 @@
-# Welcome to MkDocs
+# Presentación alumno
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+<div class="cabecera">
+  <img src="./images/adrian.jpg" alt="JuveYell">
+</div>
+<div class="cabecera2">
+  <h2>Adrián Velasco Carrasco</h2>
+  <h2>2º Desarrollo de Aplicaciones Web</h2>
+</div>
 
-## Commands
+<style>
+    .cabecera {
+      display: flex;
+      flex-direction: column; /* Cambiamos a columna para alinear imagen y texto verticalmente */
+      align-items: center; /* Centra horizontalmente los elementos hijos */
+    }
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+    .cabecera2 {
+      display: flex;
+      flex-direction: column; /* Alineamos el texto en columna */
+      align-items: center; /* Centra horizontalmente el texto */
+    }
 
-## Project layout
+    img {
+      border-radius: 50%;
+      width: 300px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+</style>
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+
+
