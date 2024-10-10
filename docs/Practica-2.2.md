@@ -1,3 +1,0 @@
-### Comienzo Práctica 2.2
-
-En esta practica...
