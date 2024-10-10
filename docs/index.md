@@ -1,6 +1,4 @@
-# Adrián Velasco Carrasco
-
-## Práctica 2.1 - Instalación y configuración de un servidor web Nginx
+# Práctica 2.1 - Instalación y configuración de un servidor web Nginx
 
 ### Instalación
 
