@@ -18,4 +18,4 @@ Para crearla haremos uso del comando: `sudo mkdir -p /var/www/nombre_web/html`
 
 Y dentro de esta carpeta, debemos clonar el repositorio: `https://github.com/cloudacademy/static-website-example`
 
-Además, haremos que el propietario de esta carpeta y todo lo que haya
+Además, haremos que el propietario de esta carpeta y todo lo que haya.
