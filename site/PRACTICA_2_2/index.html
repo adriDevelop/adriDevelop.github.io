@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_2_1/">
+        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_2_2/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../PRACTICA_2_1/">
       
-      
-        <link rel="next" href="../PRACTICA_2_2/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Práctica 2.1 - Instalación y configuración de un servidor web Nginx - Adrian Velasco Carrasco</title>
+        <title>Práctica 2.2 - Autenticación en Nginx - Adrian Velasco Carrasco</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-21-instalacion-y-configuracion-de-un-servidor-web-nginx" class="md-skip">
+        <a href="#practica-22-autenticacion-en-nginx" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Práctica 2.1 - Instalación y configuración de un servidor web Nginx
+              Práctica 2.2 - Autenticación en Nginx
             
           </span>
         </div>
@@ -210,6 +208,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRACTICA_2_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Práctica 2.1 - Instalación y configuración de un servidor web Nginx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -226,7 +244,7 @@
           
   
   <span class="md-ellipsis">
-    Práctica 2.1 - Instalación y configuración de un servidor web Nginx
+    Práctica 2.2 - Autenticación en Nginx
   </span>
   
 
@@ -237,7 +255,7 @@
         
   
   <span class="md-ellipsis">
-    Práctica 2.1 - Instalación y configuración de un servidor web Nginx
+    Práctica 2.2 - Autenticación en Nginx
   </span>
   
 
@@ -259,54 +277,90 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalacion" class="md-nav__link">
+  <a href="#creacion-de-usuarios-y-contrasenas-para-el-acceso-web" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación
+      Creación de usuarios y contraseñas para el acceso web.
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creacion-de-las-carpetas-del-sitio-web" class="md-nav__link">
+  <a href="#tarea-" class="md-nav__link">
     <span class="md-ellipsis">
-      Creación de las carpetas del sitio web
+      TAREA .-
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuracion-de-servidor-web-nginx" class="md-nav__link">
+  <a href="#configurando-el-servidor-nginx-para-usar-autenticacion-basica" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuración de servidor web NGINX
+      Configurando el servidor Nginx para usar autenticación básica.
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#comprobaciones" class="md-nav__link">
+  <a href="#probando-la-nueva-configuracion" class="md-nav__link">
     <span class="md-ellipsis">
-      Comprobaciones
+      Probando la nueva configuración.
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ftp" class="md-nav__link">
+  <a href="#tarea-_1" class="md-nav__link">
     <span class="md-ellipsis">
-      FTP
+      TAREA.-
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#https" class="md-nav__link">
+  <a href="#tarea-_2" class="md-nav__link">
     <span class="md-ellipsis">
-      HTTPS
+      TAREA.-
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion-de-autenticacion-basica-con-la-restriccion-de-acceso-por-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobación de autenticación básica con la restricción de acceso por IP.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarea-_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      TAREA.-
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarea-_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      TAREA.-
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respuesta-a-las-cuestiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Respuesta a las cuestiones.
     </span>
   </a>
   
@@ -316,26 +370,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../PRACTICA_2_2/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Práctica 2.2 - Autenticación en Nginx
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -367,54 +401,90 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#instalacion" class="md-nav__link">
+  <a href="#creacion-de-usuarios-y-contrasenas-para-el-acceso-web" class="md-nav__link">
     <span class="md-ellipsis">
-      Instalación
+      Creación de usuarios y contraseñas para el acceso web.
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#creacion-de-las-carpetas-del-sitio-web" class="md-nav__link">
+  <a href="#tarea-" class="md-nav__link">
     <span class="md-ellipsis">
-      Creación de las carpetas del sitio web
+      TAREA .-
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuracion-de-servidor-web-nginx" class="md-nav__link">
+  <a href="#configurando-el-servidor-nginx-para-usar-autenticacion-basica" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuración de servidor web NGINX
+      Configurando el servidor Nginx para usar autenticación básica.
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#comprobaciones" class="md-nav__link">
+  <a href="#probando-la-nueva-configuracion" class="md-nav__link">
     <span class="md-ellipsis">
-      Comprobaciones
+      Probando la nueva configuración.
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ftp" class="md-nav__link">
+  <a href="#tarea-_1" class="md-nav__link">
     <span class="md-ellipsis">
-      FTP
+      TAREA.-
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#https" class="md-nav__link">
+  <a href="#tarea-_2" class="md-nav__link">
     <span class="md-ellipsis">
-      HTTPS
+      TAREA.-
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobacion-de-autenticacion-basica-con-la-restriccion-de-acceso-por-ip" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobación de autenticación básica con la restricción de acceso por IP.
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarea-_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      TAREA.-
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tarea-_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      TAREA.-
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#respuesta-a-las-cuestiones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Respuesta a las cuestiones.
     </span>
   </a>
   
@@ -435,87 +505,33 @@
                   
 
 
-<h1 id="practica-21-instalacion-y-configuracion-de-un-servidor-web-nginx">Práctica 2.1 - Instalación y configuración de un servidor web Nginx</h1>
-<h3 id="instalacion">Instalación</h3>
-<p>Para instalar el servidor de nginx en nuestra Debian debemos de realizar los siguientes comandos: <br>
-<code>sudo apt update</code>
-<code>sudo apt install nginx</code></p>
-<p><img alt="alt text" src="../images/Captura%20de%20pantalla%202024-10-08%20a%20las%2023.39.11.png" /></p>
-<p>Y comprobamos que se ha instalado y que está funcionando correcamente: <br>
-<code>systemctl status nginx</code></p>
-<p><img alt="alt text" src="../images/image.png" /></p>
-<h3 id="creacion-de-las-carpetas-del-sitio-web">Creación de las carpetas del sitio web</h3>
-<p>Vamos a crear nuestra carpeta para nuestro sitio web dentro de /var/www ya que típicamente, estas carpetas almacenan los sitios.
-Para crearla haremos uso del comando: <code>sudo mkdir -p /var/www/adridevelop/html</code></p>
-<p><img alt="alt text" src="../images/image2.png" /></p>
-<p>Para el siguiente paso, deberemos de instalar git en Debian. Para ello realizamos lo siguiente.
-<img alt="alt text" src="../images/image3.png" /></p>
-<p>Y dentro de esta carpeta, debemos clonar el repositorio: <code>https://github.com/cloudacademy/static-website-example</code></p>
-<p><img alt="alt text" src="../images/image4.png" /></p>
-<p>Ahora, haremos que el usuario www-data sea el propietario mediante el comando <code>sudo chown -R www-data:www-data /var/www/adridevelop/html</code>.</p>
-<p><img alt="alt text" src="../images/image5.png" /></p>
-<p>A continuación, daremos los permisos necesarios para no tener errores en el acceso al sitio web usando el comando <code>sudo chmod -R 755 /var/www/adridevelop</code></p>
-<p><img alt="alt text" src="../images/image-1.png" /></p>
-<p>Y comprobaremos que está funcionando desde nuestra máquina local escribiendo en la barra de búsqueda la ip de nuestro servidor.</p>
-<p><img alt="alt text" src="../images/image6.png" /></p>
-<h3 id="configuracion-de-servidor-web-nginx">Configuración de servidor web NGINX</h3>
-<p>Para que podamos presentar contenido en nuestra webm deberemos de crear un bloque de servidor con directivas correctas. Para ello, crearemos un nuevo archivo de configuración. Iremos a nuestra terminal y crearemos nuestro archivo de configuración mediante <code>sudo nano /etc/nginx/sites-available/vuestro_dominio</code>.</p>
-<p><img alt="alt text" src="../images/image7.png" /></p>
-<p>Y dentro de este archivo que hemos creado, generaremos lo siguiente:</p>
-<pre><code>server {
-        listen 80;
-        listen [::]:80;
-        root /ruta/absoluta/archivo/index;
-        index index.html index.htm index.nginx-debian.html;
-        server_name nombre_web;
-        location / {
-                try_files $uri $uri/ =404;
-        }
-}
-</code></pre>
-<p><img alt="alt text" src="../images/image8.png" /></p>
-<p>También, deberemos de crear un archivo simbólico entre este archivo y el de los sitios que están habilitados. Para ello <code>sudo ln -s /etc/nginx/sites-available/nombre_web /etc/nginx/sites-enabled/</code></p>
-<p><img alt="alt text" src="../images/image9.png" /></p>
-<p>Y reiniciaremos el servidor. <code>sudo systemctl restart nginx</code></p>
-<p><img alt="alt text" src="../images/image10.png" /></p>
-<h3 id="comprobaciones">Comprobaciones</h3>
-<p>Para comprobar que nuestro host está funcionando, deberemos de acceder dentro de nuestra máquina cliente a /etc/host y añadiremos nuestro servidor nginx.</p>
-<p><img alt="alt text" src="../images/image11.png" /></p>
-<p>Y deberemos también comprobar que, las peticiones se están registrando correctamente en los archivos de logs, tanto las correctas como las erróneas.</p>
-<p><img alt="alt text" src="../images/image12.png" /></p>
-<p><img alt="alt text" src="../images/image13.png" /></p>
-<p><img alt="alt text" src="../images/image14.png" /></p>
-<p><img alt="alt text" src="../images/image15.png" /></p>
-<h3 id="ftp">FTP</h3>
-<p>Para configurar SFTP en Debian deberemos de instalar antes vsftpd, para ello, haremos uso de <code>sudo apt-get install vsftpd</code></p>
-<p><img alt="alt text" src="../images/image16.png" /></p>
-<p>Tras eso, crearemos una carpeta en nuestro home de Debian llamada ftp. <code>mkdir /home/adrian-alumno/ftp</code></p>
-<p><img alt="alt text" src="../images/image17.png" /></p>
-<p>Tras eso, deberemos de crear los certificados de seguridad necesarios mediante <code>sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem</code></p>
-<p><img alt="alt text" src="../images/image18.png" /></p>
-<p>Y una vez realizados estos pasos, deberemos de editar el documento /etc/vsftpd.conf de la siguiente manera: <code>sudo nano /etc/vsftpd.conf</code></p>
-<p><img alt="alt text" src="../images/image19.png" /></p>
-<p>Y guardaremos los cambios y reiniciaremos el servidor. <code>sudo systemctl restart -now vsftpd</code></p>
-<p><img alt="alt text" src="../images/image20.png" /></p>
-<p>Tras esta configuración, instalaremos FileZilla y haremos una operación ftp a nuestro servidor. Para ello, deberemos de poner nuestra ip, nombre de usuario, contraseña y puerto para que podamos realizar la conexión. </p>
-<p><img alt="alt text" src="../images/image21.png" /></p>
-<p>Tras haber realizado la conexión correctamente, debemos pasar un archivo para comprobar que funciona, en mi caso, una foto.</p>
-<p><img alt="alt text" src="../images/image22.png" /></p>
-<p><img alt="alt text" src="../images/image23.png" /></p>
-<h3 id="https">HTTPS</h3>
-<p>Deberemos de instalar openssl para que podamos acceder a nuestro sitio a través de https.</p>
-<p><img alt="alt text" src="../images/image24.png" /></p>
-<p>Ahora, crearemos nuestro certificado.</p>
-<p><img alt="alt text" src="../images/image25.png" /></p>
-<p>Y tras eso, almacenaremos la configuración.</p>
-<p><img alt="alt text" src="../images/image26.png" /></p>
-<p>Y agregaremos el cerficado y las nuevas rutas a nuestro fichero.</p>
-<p><img alt="alt text" src="../images/image27.png" /></p>
-<p>Y en nuestro host, añadiremos en nuestra ip, las direcciones añadidas anteriormente.</p>
-<p><img alt="alt text" src="../images/image28.png" /></p>
-<p>Y buscamos en nuestro navegador nuestro sitio web.</p>
-<p><img alt="alt text" src="../images/image29.png" /></p>
-<p><img alt="alt text" src="../images/image30.png" /></p>
+<h1 id="practica-22-autenticacion-en-nginx">Práctica 2.2 - Autenticación en Nginx</h1>
+<h3 id="creacion-de-usuarios-y-contrasenas-para-el-acceso-web">Creación de usuarios y contraseñas para el acceso web.</h3>
+<p>Lo que haremos en este paso será crear un archivo oculto .htpasswd en el directorio de configuración.
+Para ello, usaremos el siguiente comando.</p>
+<p>Y después, crearemos un cifrado para el usuario.</p>
+<h3 id="tarea-">TAREA .-</h3>
+<p>Crear dos usuarios, uno con tu nombre y otro con tu primer apellido.</p>
+<p>Comprueba que el usuario y la contraseña aparecen cifrados en el fichero .htpasswd</p>
+<h3 id="configurando-el-servidor-nginx-para-usar-autenticacion-basica">Configurando el servidor Nginx para usar autenticación básica.</h3>
+<p>Debemos de editar nuestro archivo de configuración para añadir la configuracion para que nginx utilice el fichero que previamente hemos creado.</p>
+<p>Y una vez finalicemos, reiniciaremos nuestro servicio.</p>
+<h3 id="probando-la-nueva-configuracion">Probando la nueva configuración.</h3>
+<h3 id="tarea-_1">TAREA.-</h3>
+<p>Intentamos iniciar con un usuario erroneo y luego con uno correcto. </p>
+<p>Adjuntar captura de pantalla de los logs.</p>
+<h3 id="tarea-_2">TAREA.-</h3>
+<p>Borra las dos lñineas que hacen referencia a la autenticación básica en el location del directorio raíz. Tras ello, añade el nuevo location dentro con la autenticación básica para el archivo/sección contact.html únicamente.</p>
+<h3 id="comprobacion-de-autenticacion-basica-con-la-restriccion-de-acceso-por-ip">Comprobación de autenticación básica con la restricción de acceso por IP.</h3>
+<p>En este paso, permitiremos y denegaremos el acceso a la ip de nuestra máquina. Para ello debemos de añadir en nuestro archivo de configuración
+lo siguiente.</p>
+<h3 id="tarea-_3">TAREA.-</h3>
+<p>Configura Nginx para que no deje acceder con la IP de la máquina anfitriona al directorio raíz de una de tus dos webs. Comprueba que se deniega el acceso:</p>
+<p>Muestra página de error en el navegador.</p>
+<p>Muestra el mensaje de error de error.log.</p>
+<h3 id="tarea-_4">TAREA.-</h3>
+<p>Configura Nginx para que desde tu máquina anfitriona se tenga que tener tanto una IP válida como un usuario válido, ambas cosas a la vez, y comprueba que si puede acceder sin problemas.</p>
+<h3 id="respuesta-a-las-cuestiones">Respuesta a las cuestiones.</h3>
 
 
 
