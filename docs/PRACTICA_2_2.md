@@ -5,7 +5,7 @@
 Lo que haremos en este paso será crear un archivo oculto .htpasswd en el directorio de configuración.
 Para ello, usaremos el siguiente comando.
 
-![alt text](image.png)
+![alt text](./images_actividad_2_2/image.png)
 
 Y después, crearemos un cifrado para el usuario.
 
