@@ -14,6 +14,8 @@
         <link rel="prev" href="../PRACTICA_2_1/">
       
       
+        <link rel="next" href="../PRACTICA_2_3/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
@@ -357,19 +359,30 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#respuesta-a-las-cuestiones" class="md-nav__link">
-    <span class="md-ellipsis">
-      Respuesta a las cuestiones.
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRACTICA_2_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PRACTICA 2 3
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -481,15 +494,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#respuesta-a-las-cuestiones" class="md-nav__link">
-    <span class="md-ellipsis">
-      Respuesta a las cuestiones.
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -507,10 +511,10 @@
 
 <h1 id="practica-22-autenticacion-en-nginx">Práctica 2.2 - Autenticación en Nginx</h1>
 <h3 id="creacion-de-usuarios-y-contrasenas-para-el-acceso-web">Creación de usuarios y contraseñas para el acceso web.</h3>
-<p>Lo que haremos en este paso será crear un archivo oculto .htpasswd en el directorio de configuración.
+<p>Lo que haremos en este paso será crear un archivo oculto .htpasswd en el directorio de configuración donde guardaremos nuestros usuarios y contraseñas para el acceso a la web.
 Para ello, usaremos el siguiente comando.</p>
 <p><img alt="alt text" src="../images_actividad_2_2/image.png" /></p>
-<p>Y después, crearemos un cifrado para el usuario.</p>
+<p>Y después, crearemos una contraseña que cifrará al usuario.</p>
 <p><img alt="alt text" src="../images_actividad_2_2/image-1.png" /></p>
 <h3 id="tarea-">TAREA .-</h3>
 <p>Crear dos usuarios, uno con tu nombre y otro con tu primer apellido.</p>
@@ -518,19 +522,19 @@ Para ello, usaremos el siguiente comando.</p>
 <p>Comprueba que el usuario y la contraseña aparecen cifrados en el fichero .htpasswd</p>
 <p><img alt="alt text" src="../images_actividad_2_2/image-3.png" /></p>
 <h3 id="configurando-el-servidor-nginx-para-usar-autenticacion-basica">Configurando el servidor Nginx para usar autenticación básica.</h3>
-<p>Debemos de editar nuestro archivo de configuración para añadir la configuracion para que nginx utilice el fichero que previamente hemos creado.</p>
+<p>Debemos de editar nuestro archivo de configuración para añadir la configuración para que nginx utilice el fichero que previamente hemos creado y podamos así usarlo en nuestra página para que pida el acceso de usuario.</p>
 <p><img alt="alt text" src="../images_actividad_2_2/image-4.png" /></p>
-<p>Y una vez finalicemos, reiniciaremos nuestro servicio.</p>
+<p>Y una vez finalicemos, reiniciaremos nuestro servicio nginx.</p>
 <p><img alt="alt text" src="../images_actividad_2_2/image-5.png" /></p>
 <h3 id="probando-la-nueva-configuracion">Probando la nueva configuración.</h3>
 <h3 id="tarea-_1">TAREA.-</h3>
-<p>Intentamos iniciar con un usuario erroneo y luego con uno correcto. </p>
-<p><img alt="alt text" src="../images_actividad_2_2/image-6.png" />
-<img alt="alt text" src="../images_actividad_2_2/image-7.png" /></p>
+<p>Intentamos iniciar con un usuario.
+<img alt="alt text" src="../images_actividad_2_2/image-6.png" /></p>
 <h3 id="tarea-_2">TAREA.-</h3>
 <p>Borra las dos líneas que hacen referencia a la autenticación básica en el location del directorio raíz. Tras ello, añade el nuevo location dentro con la autenticación básica para el archivo/sección contact.html únicamente.</p>
 <p><img alt="alt text" src="../images_actividad_2_2/image-10.png" /></p>
-<p>Para ello, como no podemos hacer uso de #contact para llamarlo en el archivo de configuracion para ponerle el logueo, deberemos de crearnos un contact.html a parte con el contenido de este en nuestro directorio del proyecto para que podamos hacer referencia a él desde el archivo de configuración. Una vez lo tengamos creado, con todo el contenido, debemos de añadir la configuración para que nuestro sistema pida la autenticación de usuario cuando se quiera acceder a esa página y no nos dejará acceder nada más que a contact.</p>
+<p>Para ello, como no podemos hacer uso de #contact debemos de crearnos un contact.html a parte con el contenido de #contact en nuestro directorio del proyecto para que podamos hacer referencia a él desde el archivo de configuración. 
+Una vez lo tengamos creado, con todo el contenido, debemos de añadir la configuración para que nuestro sistema pida la autenticación de usuario cuando se quiera acceder a esa página y no nos dejará acceder nada más que a contact.</p>
 <p><img alt="alt text" src="../images_actividad_2_2/image-9.png" /></p>
 <h3 id="comprobacion-de-autenticacion-basica-con-la-restriccion-de-acceso-por-ip">Comprobación de autenticación básica con la restricción de acceso por IP.</h3>
 <p>En este paso, permitiremos y denegaremos el acceso a la ip de nuestra máquina. Para ello debemos de añadir en nuestro archivo de configuración
@@ -545,7 +549,6 @@ lo siguiente.</p>
 <h3 id="tarea-_4">TAREA.-</h3>
 <p>Configura Nginx para que desde tu máquina anfitriona se tenga que tener tanto una IP válida como un usuario válido, ambas cosas a la vez, y comprueba que si puede acceder sin problemas.</p>
 <p><img alt="alt text" src="../images_actividad_2_2/image-14.png" /></p>
-<h3 id="respuesta-a-las-cuestiones">Respuesta a las cuestiones.</h3>
 
 
 
