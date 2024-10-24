@@ -1,4 +1,4 @@
-## Practica 2.3: Proxy inverso con Nginx.
+# Practica 2.3: Proxy inverso con Nginx.
 
 Para esta practica, deberemos de clonar antes de nada nuestra maquina principal para crear la proxy, teniendo la precaucion de que al clonarla, tenemos que cambiarle la direccion mac a esa maquina para que no haya conflictos en la red ya que tendrian la misma ip.
 
