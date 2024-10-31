@@ -10,11 +10,10 @@ y configuramos el nuevo webserver.
 ![alt text](./imagenes_actividad_2_4/image-1.png)
 
 ## Ningx proxy inverso.
-Deberemos de configurar el archivo de configuracion y se creara un bloque upstring que lo que hara sera englobar a los dos servidores webserver para que cuando haya sobrecarga, pueda redirigir a webserver1 o a webserver2.
-
 Tras esto, deberemos modificar tambien el archivo host, ya que la ip de la nueva maquina clonada, no la tenemos en el archivo.
 ![alt text](./imagenes_actividad_2_4/image.png)
 
+Deberemos de configurar el archivo de configuracion y se creara un bloque upstring que lo que hara sera englobar a los dos servidores webserver para que cuando haya sobrecarga, pueda redirigir a webserver1 o a webserver2.
 ![alt text](./imagenes_actividad_2_4/image-5.png)
 
 ## Nginx servidor webserver.
