@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_2_1/">
+        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_2_4/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../PRACTICA_2_3/">
       
-      
-        <link rel="next" href="../PRACTICA_2_2/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Práctica 2.1 - Instalación y configuración de un servidor web Nginx - Adrian Velasco Carrasco</title>
+        <title>Practica 2.4 - Balanceo de Carga con Proxy inverso Nginx. - Adrian Velasco Carrasco</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-21-instalacion-y-configuracion-de-un-servidor-web-nginx" class="md-skip">
+        <a href="#practica-24-balanceo-de-carga-con-proxy-inverso-nginx" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Práctica 2.1 - Instalación y configuración de un servidor web Nginx
+              Practica 2.4 - Balanceo de Carga con Proxy inverso Nginx.
             
           </span>
         </div>
@@ -210,30 +208,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Práctica 2.1 - Instalación y configuración de un servidor web Nginx
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../PRACTICA_2_1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -242,80 +220,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instalación
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creacion-de-las-carpetas-del-sitio-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creación de las carpetas del sitio web
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracion-de-servidor-web-nginx" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuración de servidor web NGINX
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comprobaciones" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comprobaciones
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ftp" class="md-nav__link">
-    <span class="md-ellipsis">
-      FTP
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#https" class="md-nav__link">
-    <span class="md-ellipsis">
-      HTTPS
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -364,10 +268,19 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../PRACTICA_2_4/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -376,6 +289,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -400,68 +314,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#instalacion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Instalación
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creacion-de-las-carpetas-del-sitio-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creación de las carpetas del sitio web
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configuracion-de-servidor-web-nginx" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configuración de servidor web NGINX
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comprobaciones" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comprobaciones
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ftp" class="md-nav__link">
-    <span class="md-ellipsis">
-      FTP
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#https" class="md-nav__link">
-    <span class="md-ellipsis">
-      HTTPS
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -475,87 +327,29 @@
                   
 
 
-<h1 id="practica-21-instalacion-y-configuracion-de-un-servidor-web-nginx">Práctica 2.1 - Instalación y configuración de un servidor web Nginx</h1>
-<h3 id="instalacion">Instalación</h3>
-<p>Para instalar el servidor de nginx en nuestra Debian debemos de realizar los siguientes comandos: <br>
-<code>sudo apt update</code>
-<code>sudo apt install nginx</code></p>
-<p><img alt="alt text" src="../images/Captura%20de%20pantalla%202024-10-08%20a%20las%2023.39.11.png" /></p>
-<p>Y comprobamos que se ha instalado y que está funcionando correcamente: <br>
-<code>systemctl status nginx</code></p>
-<p><img alt="alt text" src="../images/image.png" /></p>
-<h3 id="creacion-de-las-carpetas-del-sitio-web">Creación de las carpetas del sitio web</h3>
-<p>Vamos a crear nuestra carpeta para nuestro sitio web dentro de /var/www ya que típicamente, estas carpetas almacenan los sitios.
-Para crearla haremos uso del comando: <code>sudo mkdir -p /var/www/adridevelop/html</code></p>
-<p><img alt="alt text" src="../images/image2.png" /></p>
-<p>Para el siguiente paso, deberemos de instalar git en Debian. Para ello realizamos lo siguiente.
-<img alt="alt text" src="../images/image3.png" /></p>
-<p>Y dentro de esta carpeta, debemos clonar el repositorio: <code>https://github.com/cloudacademy/static-website-example</code></p>
-<p><img alt="alt text" src="../images/image4.png" /></p>
-<p>Ahora, haremos que el usuario www-data sea el propietario mediante el comando <code>sudo chown -R www-data:www-data /var/www/adridevelop/html</code>.</p>
-<p><img alt="alt text" src="../images/image5.png" /></p>
-<p>A continuación, daremos los permisos necesarios para no tener errores en el acceso al sitio web usando el comando <code>sudo chmod -R 755 /var/www/adridevelop</code></p>
-<p><img alt="alt text" src="../images/image-1.png" /></p>
-<p>Y comprobaremos que está funcionando desde nuestra máquina local escribiendo en la barra de búsqueda la ip de nuestro servidor.</p>
-<p><img alt="alt text" src="../images/image6.png" /></p>
-<h3 id="configuracion-de-servidor-web-nginx">Configuración de servidor web NGINX</h3>
-<p>Para que podamos presentar contenido en nuestra webm deberemos de crear un bloque de servidor con directivas correctas. Para ello, crearemos un nuevo archivo de configuración. Iremos a nuestra terminal y crearemos nuestro archivo de configuración mediante <code>sudo nano /etc/nginx/sites-available/vuestro_dominio</code>.</p>
-<p><img alt="alt text" src="../images/image7.png" /></p>
-<p>Y dentro de este archivo que hemos creado, generaremos lo siguiente:</p>
-<pre><code>server {
-        listen 80;
-        listen [::]:80;
-        root /ruta/absoluta/archivo/index;
-        index index.html index.htm index.nginx-debian.html;
-        server_name nombre_web;
-        location / {
-                try_files $uri $uri/ =404;
-        }
-}
-</code></pre>
-<p><img alt="alt text" src="../images/image8.png" /></p>
-<p>También, deberemos de crear un archivo simbólico entre este archivo y el de los sitios que están habilitados. Para ello <code>sudo ln -s /etc/nginx/sites-available/nombre_web /etc/nginx/sites-enabled/</code></p>
-<p><img alt="alt text" src="../images/image9.png" /></p>
-<p>Y reiniciaremos el servidor. <code>sudo systemctl restart nginx</code></p>
-<p><img alt="alt text" src="../images/image10.png" /></p>
-<h3 id="comprobaciones">Comprobaciones</h3>
-<p>Para comprobar que nuestro host está funcionando, deberemos de acceder dentro de nuestra máquina cliente a /etc/host y añadiremos nuestro servidor nginx.</p>
-<p><img alt="alt text" src="../images/image11.png" /></p>
-<p>Y deberemos también comprobar que, las peticiones se están registrando correctamente en los archivos de logs, tanto las correctas como las erróneas.</p>
-<p><img alt="alt text" src="../images/image12.png" /></p>
-<p><img alt="alt text" src="../images/image13.png" /></p>
-<p><img alt="alt text" src="../images/image14.png" /></p>
-<p><img alt="alt text" src="../images/image15.png" /></p>
-<h3 id="ftp">FTP</h3>
-<p>Para configurar SFTP en Debian deberemos de instalar antes vsftpd, para ello, haremos uso de <code>sudo apt-get install vsftpd</code></p>
-<p><img alt="alt text" src="../images/image16.png" /></p>
-<p>Tras eso, crearemos una carpeta en nuestro home de Debian llamada ftp. <code>mkdir /home/adrian-alumno/ftp</code></p>
-<p><img alt="alt text" src="../images/image17.png" /></p>
-<p>Tras eso, deberemos de crear los certificados de seguridad necesarios mediante <code>sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem</code></p>
-<p><img alt="alt text" src="../images/image18.png" /></p>
-<p>Y una vez realizados estos pasos, deberemos de editar el documento /etc/vsftpd.conf de la siguiente manera: <code>sudo nano /etc/vsftpd.conf</code></p>
-<p><img alt="alt text" src="../images/image19.png" /></p>
-<p>Y guardaremos los cambios y reiniciaremos el servidor. <code>sudo systemctl restart -now vsftpd</code></p>
-<p><img alt="alt text" src="../images/image20.png" /></p>
-<p>Tras esta configuración, instalaremos FileZilla y haremos una operación ftp a nuestro servidor. Para ello, deberemos de poner nuestra ip, nombre de usuario, contraseña y puerto para que podamos realizar la conexión. </p>
-<p><img alt="alt text" src="../images/image21.png" /></p>
-<p>Tras haber realizado la conexión correctamente, debemos pasar un archivo para comprobar que funciona, en mi caso, una foto.</p>
-<p><img alt="alt text" src="../images/image22.png" /></p>
-<p><img alt="alt text" src="../images/image23.png" /></p>
-<h3 id="https">HTTPS</h3>
-<p>Deberemos de instalar openssl para que podamos acceder a nuestro sitio a través de https.</p>
-<p><img alt="alt text" src="../images/image24.png" /></p>
-<p>Ahora, crearemos nuestro certificado.</p>
-<p><img alt="alt text" src="../images/image25.png" /></p>
-<p>Y tras eso, almacenaremos la configuración.</p>
-<p><img alt="alt text" src="../images/image26.png" /></p>
-<p>Y agregaremos el cerficado y las nuevas rutas a nuestro fichero.</p>
-<p><img alt="alt text" src="../images/image27.png" /></p>
-<p>Y en nuestro host, añadiremos en nuestra ip, las direcciones añadidas anteriormente.</p>
-<p><img alt="alt text" src="../images/image28.png" /></p>
-<p>Y buscamos en nuestro navegador nuestro sitio web.</p>
-<p><img alt="alt text" src="../images/image29.png" /></p>
-<p><img alt="alt text" src="../images/image30.png" /></p>
+<h1 id="practica-24-balanceo-de-carga-con-proxy-inverso-nginx">Practica 2.4 - Balanceo de Carga con Proxy inverso Nginx.</h1>
+<p>Lo primero que deberemos de hacer sera crear nuestra copia de nuestra maquina virtual, teniendo asi 2 maquinas con servidores web distintos y un proxy reutilizado de la practica anterior. Este servira para que realice el balanceo de carga entre los dos servidores web.</p>
+<h1 id="configuracion-del-nuevo-webserver2">Configuracion del nuevo webserver2.</h1>
+<h2 id="unlink-webserver-clonado">Unlink webserver clonado.</h2>
+<p>Hacemos unlink del webserver que teniamos configurado de la maquina que ha sido clonada
+y configuramos el nuevo webserver.
+<img alt="alt text" src="../imagenes_actividad_2_4/image-1.png" /></p>
+<h2 id="ningx-proxy-inverso">Ningx proxy inverso.</h2>
+<p>Deberemos de configurar el archivo de configuracion y se creara un bloque upstring que lo que hara sera englobar a los dos servidores webserver para que cuando haya sobrecarga, pueda redirigir a webserver1 o a webserver2.</p>
+<p>Tras esto, deberemos modificar tambien el archivo host, ya que la ip de la nueva maquina clonada, no la tenemos en el archivo.
+<img alt="alt text" src="../imagenes_actividad_2_4/image.png" /></p>
+<p><img alt="alt text" src="../imagenes_actividad_2_4/image-5.png" /></p>
+<h2 id="nginx-servidor-webserver">Nginx servidor webserver.</h2>
+<p>Deberemos de configurar la maquina proxy escuche a la maquina clonada (webserver2), como hicimos en la anterior practica con la maquina clonada(webserver1), y le agregaremos la cabecera para este webserver(webserver2).</p>
+<h2 id="configuracion-archivo-etchosts-de-la-maquina-proxy">Configuracion archivo /etc/hosts de la maquina proxy.</h2>
+<p><img alt="alt text" src="../imagenes_actividad_2_4/image-2.png" /></p>
+<h2 id="configuracion-archivo-etchosts-de-la-maquina-local">Configuracion archivo /etc/hosts de la maquina local.</h2>
+<p><img alt="alt text" src="../imagenes_actividad_2_4/image-6.png" /></p>
+<h2 id="comprobaciones">Comprobaciones.</h2>
+<p>Comprobamos que cuando la maquina webserver1 este caida(o apagada) o sobrecargada, se redirija a la maquina webserver2, comprobandolo mediante el header que envia la pagina.
+<img alt="alt text" src="../imagenes_actividad_2_4/image-7.png" /></p>
+<p>Y despues hacemos lo correspondiente con la otra maquina.
+<img alt="alt text" src="../imagenes_actividad_2_4/image-8.png" /></p>
 
 
 
