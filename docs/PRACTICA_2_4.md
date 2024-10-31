@@ -5,21 +5,19 @@ Lo primero que deberemos de hacer sera crear nuestra copia de nuestra maquina vi
 # Configuracion del nuevo webserver2.
 
 ## Unlink webserver clonado.
-Hacemos unlink del webserver que teniamos configurado de la maquina que ha sido clonada
-y configuramos el nuevo webserver.
+Hacemos unlink del webserver que teniamos configurado de la maquina que ha sido clonada y configuramos el nuevo webserver.
 ![alt text](./imagenes_actividad_2_4/image-1.png)
 
 ## Ningx proxy inverso.
-Tras esto, deberemos modificar tambien el archivo host, ya que la ip de la nueva maquina clonada, no la tenemos en el archivo.
+Tras esto, deberemos modificar tambien el archivo webserver, ya que la configuracion es de la maquina anterior.
 ![alt text](./imagenes_actividad_2_4/image.png)
 
-Deberemos de configurar el archivo de configuracion y se creara un bloque upstring que lo que hara sera englobar a los dos servidores webserver para que cuando haya sobrecarga, pueda redirigir a webserver1 o a webserver2.
 ![alt text](./imagenes_actividad_2_4/image-5.png)
 
 ## Nginx servidor webserver.
-Deberemos de configurar la maquina proxy escuche a la maquina clonada (webserver2), como hicimos en la anterior practica con la maquina clonada(webserver1), y le agregaremos la cabecera para este webserver(webserver2).
+Deberemos de configurar la maquina proxy escuche a la maquina clonada (webserver2), como hicimos en la anterior practica con la maquina clonada(webserver1), y le agregaremos la cabecera para este webserver(webserver2) y se creara un bloque upstring que lo que hara sera englobar a los dos servidores webserver para que cuando haya sobrecarga, pueda redirigir a webserver1 o a webserver2.
 
-## Configuracion archivo /etc/hosts de la maquina proxy.
+## Configuracion archivo ejemplo-proxy de la maquina proxy.
 ![alt text](./imagenes_actividad_2_4/image-2.png)
 
 ## Configuracion archivo /etc/hosts de la maquina local.
