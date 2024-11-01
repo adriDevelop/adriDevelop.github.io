@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_2_2/">
+        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_2_5/">
       
       
-        <link rel="prev" href="../PRACTICA_2_1/">
+        <link rel="prev" href="../PRACTICA_2_4/">
       
-      
-        <link rel="next" href="../PRACTICA_2_3/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Práctica 2.2 - Autenticación en Nginx - Adrian Velasco Carrasco</title>
+        <title>Practica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX - Adrian Velasco Carrasco</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-22-autenticacion-en-nginx" class="md-skip">
+        <a href="#practica-25-proxy-inverso-y-balanceo-de-carga-con-ssl-en-nginx" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Práctica 2.2 - Autenticación en Nginx
+              Practica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX
             
           </span>
         </div>
@@ -230,30 +228,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Práctica 2.2 - Autenticación en Nginx
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../PRACTICA_2_2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -262,107 +240,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#creacion-de-usuarios-y-contrasenas-para-el-acceso-web" class="md-nav__link">
-    <span class="md-ellipsis">
-      Creación de usuarios y contraseñas para el acceso web.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tarea-" class="md-nav__link">
-    <span class="md-ellipsis">
-      TAREA .-
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#configurando-el-servidor-nginx-para-usar-autenticacion-basica" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configurando el servidor Nginx para usar autenticación básica.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#probando-la-nueva-configuracion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Probando la nueva configuración.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tarea-_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      TAREA.-
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tarea-_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      TAREA.-
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#comprobacion-de-autenticacion-basica-con-la-restriccion-de-acceso-por-ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comprobación de autenticación básica con la restricción de acceso por IP.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tarea-_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      TAREA.-
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tarea-_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      TAREA.-
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -411,10 +288,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../PRACTICA_2_5/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Practica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -423,6 +320,110 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creacion-de-nuestro-certificado-autofirmado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creacion de nuestro certificado autofirmado.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creacion de nuestro certificado autofirmado.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-creamos-el-directorio-para-nuestros-certificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como creamos el directorio para nuestros certificados?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-creamos-nuestros-certificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como creamos nuestros certificados?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracion-del-proxy-inverso-para-aceptacion-de-certificados-autofirmados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuracion del proxy inverso para aceptacion de certificados autofirmados.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuracion del proxy inverso para aceptacion de certificados autofirmados.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-debemos-de-editar-nuestro-archivo-de-proxy-inverso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como debemos de editar nuestro archivo de proxy-inverso?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-hacemos-el-unlink-de-nuestro-archivo-proxy-inverso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como hacemos el unlink de nuestro archivo proxy-inverso?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#como-agregamos-la-nueva-configuracion-a-sites-enabled" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como agregamos la nueva configuracion a sites-enabled?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#comprobaciones" class="md-nav__link">
+    <span class="md-ellipsis">
+      Comprobaciones.
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -454,81 +455,84 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creacion-de-usuarios-y-contrasenas-para-el-acceso-web" class="md-nav__link">
+  <a href="#creacion-de-nuestro-certificado-autofirmado" class="md-nav__link">
     <span class="md-ellipsis">
-      Creación de usuarios y contraseñas para el acceso web.
+      Creacion de nuestro certificado autofirmado.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creacion de nuestro certificado autofirmado.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-creamos-el-directorio-para-nuestros-certificados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como creamos el directorio para nuestros certificados?
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#tarea-" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#como-creamos-nuestros-certificados" class="md-nav__link">
     <span class="md-ellipsis">
-      TAREA .-
+      Como creamos nuestros certificados?
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#configurando-el-servidor-nginx-para-usar-autenticacion-basica" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configurando el servidor Nginx para usar autenticación básica.
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#probando-la-nueva-configuracion" class="md-nav__link">
+  <a href="#configuracion-del-proxy-inverso-para-aceptacion-de-certificados-autofirmados" class="md-nav__link">
     <span class="md-ellipsis">
-      Probando la nueva configuración.
+      Configuracion del proxy inverso para aceptacion de certificados autofirmados.
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuracion del proxy inverso para aceptacion de certificados autofirmados.">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#como-debemos-de-editar-nuestro-archivo-de-proxy-inverso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Como debemos de editar nuestro archivo de proxy-inverso?
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#tarea-_1" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#como-hacemos-el-unlink-de-nuestro-archivo-proxy-inverso" class="md-nav__link">
     <span class="md-ellipsis">
-      TAREA.-
+      Como hacemos el unlink de nuestro archivo proxy-inverso?
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#tarea-_2" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#como-agregamos-la-nueva-configuracion-a-sites-enabled" class="md-nav__link">
     <span class="md-ellipsis">
-      TAREA.-
+      Como agregamos la nueva configuracion a sites-enabled?
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#comprobacion-de-autenticacion-basica-con-la-restriccion-de-acceso-por-ip" class="md-nav__link">
-    <span class="md-ellipsis">
-      Comprobación de autenticación básica con la restricción de acceso por IP.
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tarea-_3" class="md-nav__link">
+  <a href="#comprobaciones" class="md-nav__link">
     <span class="md-ellipsis">
-      TAREA.-
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tarea-_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      TAREA.-
+      Comprobaciones.
     </span>
   </a>
   
@@ -549,46 +553,41 @@
                   
 
 
-<h1 id="practica-22-autenticacion-en-nginx">Práctica 2.2 - Autenticación en Nginx</h1>
-<h3 id="creacion-de-usuarios-y-contrasenas-para-el-acceso-web">Creación de usuarios y contraseñas para el acceso web.</h3>
-<p>Lo que haremos en este paso será crear un archivo oculto .htpasswd en el directorio de configuración donde guardaremos nuestros usuarios y contraseñas para el acceso a la web.
-Para ello, usaremos el siguiente comando.</p>
-<p><img alt="alt text" src="../images_actividad_2_2/image.png" /></p>
-<p>Y después, crearemos una contraseña que cifrará al usuario.</p>
-<p><img alt="alt text" src="../images_actividad_2_2/image-1.png" /></p>
-<h3 id="tarea-">TAREA .-</h3>
-<p>Crear dos usuarios, uno con tu nombre y otro con tu primer apellido.</p>
-<p><img alt="alt text" src="../images_actividad_2_2/image-2.png" /></p>
-<p>Comprueba que el usuario y la contraseña aparecen cifrados en el fichero .htpasswd</p>
-<p><img alt="alt text" src="../images_actividad_2_2/image-3.png" /></p>
-<h3 id="configurando-el-servidor-nginx-para-usar-autenticacion-basica">Configurando el servidor Nginx para usar autenticación básica.</h3>
-<p>Debemos de editar nuestro archivo de configuración para añadir la configuración para que nginx utilice el fichero que previamente hemos creado y podamos así usarlo en nuestra página para que pida el acceso de usuario.</p>
-<p><img alt="alt text" src="../images_actividad_2_2/image-4.png" /></p>
-<p>Y una vez finalicemos, reiniciaremos nuestro servicio nginx.</p>
-<p><img alt="alt text" src="../images_actividad_2_2/image-5.png" /></p>
-<h3 id="probando-la-nueva-configuracion">Probando la nueva configuración.</h3>
-<h3 id="tarea-_1">TAREA.-</h3>
-<p>Intentamos iniciar con un usuario.
-<img alt="alt text" src="../images_actividad_2_2/image-6.png" /></p>
-<h3 id="tarea-_2">TAREA.-</h3>
-<p>Borra las dos líneas que hacen referencia a la autenticación básica en el location del directorio raíz. Tras ello, añade el nuevo location dentro con la autenticación básica para el archivo/sección contact.html únicamente.</p>
-<p><img alt="alt text" src="../images_actividad_2_2/image-10.png" /></p>
-<p>Para ello, como no podemos hacer uso de #contact debemos de crearnos un contact.html a parte con el contenido de #contact en nuestro directorio del proyecto para que podamos hacer referencia a él desde el archivo de configuración. 
-Una vez lo tengamos creado, con todo el contenido, debemos de añadir la configuración para que nuestro sistema pida la autenticación de usuario cuando se quiera acceder a esa página y no nos dejará acceder nada más que a contact.</p>
-<p><img alt="alt text" src="../images_actividad_2_2/image-9.png" /></p>
-<h3 id="comprobacion-de-autenticacion-basica-con-la-restriccion-de-acceso-por-ip">Comprobación de autenticación básica con la restricción de acceso por IP.</h3>
-<p>En este paso, permitiremos y denegaremos el acceso a la ip de nuestra máquina. Para ello debemos de añadir en nuestro archivo de configuración
-lo siguiente.</p>
-<h3 id="tarea-_3">TAREA.-</h3>
-<p>Configura Nginx para que no deje acceder con la IP de la máquina anfitriona al directorio raíz de una de tus dos webs. Comprueba que se deniega el acceso:</p>
-<p><img alt="alt text" src="../images_actividad_2_2/image-11.png" /></p>
-<p>Muestra página de error en el navegador.</p>
-<p><img alt="alt text" src="../images_actividad_2_2/image-12.png" /></p>
-<p>Muestra el mensaje de error de error.log.</p>
-<p><img alt="alt text" src="../images_actividad_2_2/image-13.png" /></p>
-<h3 id="tarea-_4">TAREA.-</h3>
-<p>Configura Nginx para que desde tu máquina anfitriona se tenga que tener tanto una IP válida como un usuario válido, ambas cosas a la vez, y comprueba que si puede acceder sin problemas.</p>
-<p><img alt="alt text" src="../images_actividad_2_2/image-14.png" /></p>
+<h1 id="practica-25-proxy-inverso-y-balanceo-de-carga-con-ssl-en-nginx">Practica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX</h1>
+<p>En esta practica agregaremos la configuracion SSL para cifrado ssl en nuestro Proxy inverso.</p>
+<h2 id="creacion-de-nuestro-certificado-autofirmado">Creacion de nuestro certificado autofirmado.</h2>
+<p>Haremos uso de nuestro certificado autofirmado ya que como no tenemos desplegada nuestra web  y los certificados
+son de pago, pues lo haremos de forma autofirmada.</p>
+<p>Lo que deberiamos de hacer, para crear nuestros certificados seria:
+  - Irnos a la maquina proxy.
+  - Crear un directorio en el que guardaremos nuestros certificados.
+  - Y crear los certificados.</p>
+<h3 id="como-creamos-el-directorio-para-nuestros-certificados">Como creamos el directorio para nuestros certificados?</h3>
+<p><img alt="alt text" src="../imagenes_actividad_2_5/image.png" /></p>
+<h3 id="como-creamos-nuestros-certificados">Como creamos nuestros certificados?</h3>
+<p>Deberemos de crear nuestro certificado de la siguiente forma, cambiando la direccion que yo uso para guardar los certificados por la que se vaya a usar en otro caso.
+<img alt="alt text" src="../imagenes_actividad_2_5/image-1.png" />
+Tras agregar esa linea de comando nos pedira la configuracion para nuestro certificado. En la practica ponia una configuracion pero yo he agregado una personal en vez
+de poner 2DAW.</p>
+<h2 id="configuracion-del-proxy-inverso-para-aceptacion-de-certificados-autofirmados">Configuracion del proxy inverso para aceptacion de certificados autofirmados.</h2>
+<p>Tras esto, ya tendiramos nuestras claves en el archivo indicado. Ahora, debemos de configurar nuestro proxy-inverso. Para ello deberemos de realizar lo siguiente:
+  - Editar nuestro archivo proyxy-inverso.
+  - Hacer un unlink de este en la carpeta sites-enabled.
+  - Agregar la configuracion para que agregue la aceptacion de los certificados en el sites-enabled.</p>
+<h3 id="como-debemos-de-editar-nuestro-archivo-de-proxy-inverso">Como debemos de editar nuestro archivo de proxy-inverso?</h3>
+<p><img alt="alt text" src="../imagenes_actividad_2_5/image-2.png" /></p>
+<h3 id="como-hacemos-el-unlink-de-nuestro-archivo-proxy-inverso">Como hacemos el unlink de nuestro archivo proxy-inverso?</h3>
+<p>Mediante el comando sudo unlink nombre-ejemplo-proxy IMPORTANTE dentro de nuestra carpeta sites-enables ya que sino, se nos borraria la configuracion de nuestro proxy-inverso de la carpeta sites-availabe si hacemos el comando desde ese directorio.</p>
+<h3 id="como-agregamos-la-nueva-configuracion-a-sites-enabled">Como agregamos la nueva configuracion a sites-enabled?</h3>
+<p>Mediante el comando sudo ln -s /etc/nginx/sites-available/nombre-ejemplo-proxy /etc/nginx/sites-enabled</p>
+<h2 id="comprobaciones">Comprobaciones.</h2>
+<p>Las comprobaciones las deberemos hacer desde un navegador externo, en el cual accederemos a nuestro ejemplo-proxy.com. Pero tenemos que tener una maquina webserver corriendo, sino, no nos redijira a ninguna parte.
+<img alt="alt text" src="../imagenes_actividad_2_5/image-3.png" /></p>
+<p>Cuando estemos dentro, clickaremos en Aceptar el riesgo y continuar y nos aparecera la redireccion correctamente. Pero aqui lo importante es ver si los certificados estan correctamente asi que accederemos al candado que tenemos en la parte superior al lado de la barra de busqueda de nuestro navegador. 
+<img alt="alt text" src="../imagenes_actividad_2_5/image-4.png" /></p>
+<p>Y nos aparecera esta configuracion. Deberemos de acceder a la parte de ver certificado y ahi, nos aparecera toda la configuracion junto con las claves.
+<img alt="alt text" src="../imagenes_actividad_2_5/image-5.png" />
+<img alt="alt text" src="../imagenes_actividad_2_5/image-6.png" /></p>
 
 
 
