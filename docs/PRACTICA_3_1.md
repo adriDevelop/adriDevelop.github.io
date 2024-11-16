@@ -97,12 +97,3 @@ Y ahí la tendríamos con nombre pipedrapapeltijeras que fue la ruta que especif
 Ahora accederemos y haremos unas pruebas. Básicamente es un piedra papel o tijeras en el que nosotros cogemos una opción y la máquina coge otra y devuelve si ganas o pierdes y un contador.
 
 ![alt text](./imagenes_actividad_3_1/image-18.png)
-
-
-
-
-
-
-
-
-
