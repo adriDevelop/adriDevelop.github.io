@@ -41,7 +41,7 @@ Y desplegamos nuestra aplicación.
 Y hacemos la comprobación de que accede correctamente.
 ![alt text](./imagenes_actividad_3_2/image-5.png)
 
-# Parte dos de la práctica.
+### Parte dos de la práctica.
 
 Nos conectaremos mediante ssh desde nuestra máquina local a la máquina virtual de la práctica.
 
