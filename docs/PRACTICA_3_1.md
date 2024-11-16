@@ -60,7 +60,7 @@ Comprobaremos que se ha instalado correcramente mediante el comando
 Ahora deberemos de configurar un usuario para hacer uso de los scripts.
 ![alt text](./imagenes_actividad_3_1/image-11.png)
 
-### Clonaciñon del repositorio que haremos uso.
+### Clonación del repositorio que haremos uso.
 Ahora, como dije anteriormente, haremos uso de un .war externo. Para ello haremos la clonación del repositorio del que haremos uso.
 ![alt text](./imagenes_actividad_3_1/image-13.png)
 
