@@ -8,13 +8,11 @@
       
       
       
-        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_2_5/">
+        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_3_1/">
       
       
-        <link rel="prev" href="../PRACTICA_2_4/">
+        <link rel="prev" href="../PRACTICA_2_5/">
       
-      
-        <link rel="next" href="../PRACTICA_3_1/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +20,7 @@
     
     
       
-        <title>Practica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX - Adrian Velasco Carrasco</title>
+        <title>Práctica 3.1: Instalación de Tomcat y Maven para el despliegue de una aplicación Java. - Adrian Velasco Carrasco</title>
       
     
     
@@ -64,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-25-proxy-inverso-y-balanceo-de-carga-con-ssl-en-nginx" class="md-skip">
+        <a href="#practica-31-instalacion-de-tomcat-y-maven-para-el-despliegue-de-una-aplicacion-java" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Practica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX
+              Práctica 3.1: Instalación de Tomcat y Maven para el despliegue de una aplicación Java.
             
           </span>
         </div>
@@ -290,6 +288,26 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRACTICA_2_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -306,7 +324,7 @@
           
   
   <span class="md-ellipsis">
-    Practica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX
+    Práctica 3.1: Instalación de Tomcat y Maven para el despliegue de una aplicación Java.
   </span>
   
 
@@ -317,7 +335,7 @@
         
   
   <span class="md-ellipsis">
-    Practica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX
+    Práctica 3.1: Instalación de Tomcat y Maven para el despliegue de una aplicación Java.
   </span>
   
 
@@ -339,84 +357,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creacion-de-nuestro-certificado-autofirmado" class="md-nav__link">
+  <a href="#instalacion-de-tomcat" class="md-nav__link">
     <span class="md-ellipsis">
-      Creacion de nuestro certificado autofirmado.
+      Instalación de Tomcat
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Creacion de nuestro certificado autofirmado.">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#como-creamos-el-directorio-para-nuestros-certificados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Como creamos el directorio para nuestros certificados?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#como-creamos-nuestros-certificados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Como creamos nuestros certificados?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuracion-del-proxy-inverso-para-aceptacion-de-certificados-autofirmados" class="md-nav__link">
+  <a href="#anadir-usuarios-a-nuestro-tomcat" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuracion del proxy inverso para aceptacion de certificados autofirmados.
+      Añadir usuarios a nuestro Tomcat.
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Configuracion del proxy inverso para aceptacion de certificados autofirmados.">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#como-debemos-de-editar-nuestro-archivo-de-proxy-inverso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Como debemos de editar nuestro archivo de proxy-inverso?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#como-hacemos-el-unlink-de-nuestro-archivo-proxy-inverso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Como hacemos el unlink de nuestro archivo proxy-inverso?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#como-agregamos-la-nueva-configuracion-a-sites-enabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      Como agregamos la nueva configuracion a sites-enabled?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#comprobaciones" class="md-nav__link">
+  <a href="#instalacion-de-maven" class="md-nav__link">
     <span class="md-ellipsis">
-      Comprobaciones.
+      Instalación de Maven
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clonacinon-del-repositorio-que-haremos-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clonaciñon del repositorio que haremos uso.
     </span>
   </a>
   
@@ -426,26 +396,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../PRACTICA_3_1/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Práctica 3.1: Instalación de Tomcat y Maven para el despliegue de una aplicación Java.
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -477,84 +427,36 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#creacion-de-nuestro-certificado-autofirmado" class="md-nav__link">
+  <a href="#instalacion-de-tomcat" class="md-nav__link">
     <span class="md-ellipsis">
-      Creacion de nuestro certificado autofirmado.
+      Instalación de Tomcat
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Creacion de nuestro certificado autofirmado.">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#como-creamos-el-directorio-para-nuestros-certificados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Como creamos el directorio para nuestros certificados?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#como-creamos-nuestros-certificados" class="md-nav__link">
-    <span class="md-ellipsis">
-      Como creamos nuestros certificados?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuracion-del-proxy-inverso-para-aceptacion-de-certificados-autofirmados" class="md-nav__link">
+  <a href="#anadir-usuarios-a-nuestro-tomcat" class="md-nav__link">
     <span class="md-ellipsis">
-      Configuracion del proxy inverso para aceptacion de certificados autofirmados.
+      Añadir usuarios a nuestro Tomcat.
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Configuracion del proxy inverso para aceptacion de certificados autofirmados.">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#como-debemos-de-editar-nuestro-archivo-de-proxy-inverso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Como debemos de editar nuestro archivo de proxy-inverso?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#como-hacemos-el-unlink-de-nuestro-archivo-proxy-inverso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Como hacemos el unlink de nuestro archivo proxy-inverso?
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#como-agregamos-la-nueva-configuracion-a-sites-enabled" class="md-nav__link">
-    <span class="md-ellipsis">
-      Como agregamos la nueva configuracion a sites-enabled?
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#comprobaciones" class="md-nav__link">
+  <a href="#instalacion-de-maven" class="md-nav__link">
     <span class="md-ellipsis">
-      Comprobaciones.
+      Instalación de Maven
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clonacinon-del-repositorio-que-haremos-uso" class="md-nav__link">
+    <span class="md-ellipsis">
+      Clonaciñon del repositorio que haremos uso.
     </span>
   </a>
   
@@ -575,41 +477,61 @@
                   
 
 
-<h1 id="practica-25-proxy-inverso-y-balanceo-de-carga-con-ssl-en-nginx">Practica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX</h1>
-<p>En esta practica agregaremos la configuracion SSL para cifrado ssl en nuestro Proxy inverso.</p>
-<h2 id="creacion-de-nuestro-certificado-autofirmado">Creacion de nuestro certificado autofirmado.</h2>
-<p>Haremos uso de nuestro certificado autofirmado ya que como no tenemos desplegada nuestra web  y los certificados
-son de pago, pues lo haremos de forma autofirmada.</p>
-<p>Lo que deberiamos de hacer, para crear nuestros certificados seria:
-  - Irnos a la maquina proxy.
-  - Crear un directorio en el que guardaremos nuestros certificados.
-  - Y crear los certificados.</p>
-<h3 id="como-creamos-el-directorio-para-nuestros-certificados">Como creamos el directorio para nuestros certificados?</h3>
-<p><img alt="alt text" src="../imagenes_actividad_2_5/image.png" /></p>
-<h3 id="como-creamos-nuestros-certificados">Como creamos nuestros certificados?</h3>
-<p>Deberemos de crear nuestro certificado de la siguiente forma, cambiando la direccion que yo uso para guardar los certificados por la que se vaya a usar en otro caso.
-<img alt="alt text" src="../imagenes_actividad_2_5/image-1.png" />
-Tras agregar esa linea de comando nos pedira la configuracion para nuestro certificado. En la practica ponia una configuracion pero yo he agregado una personal en vez
-de poner 2DAW.</p>
-<h2 id="configuracion-del-proxy-inverso-para-aceptacion-de-certificados-autofirmados">Configuracion del proxy inverso para aceptacion de certificados autofirmados.</h2>
-<p>Tras esto, ya tendiramos nuestras claves en el archivo indicado. Ahora, debemos de configurar nuestro proxy-inverso. Para ello deberemos de realizar lo siguiente:
-  - Editar nuestro archivo proyxy-inverso.
-  - Hacer un unlink de este en la carpeta sites-enabled.
-  - Agregar la configuracion para que agregue la aceptacion de los certificados en el sites-enabled.</p>
-<h3 id="como-debemos-de-editar-nuestro-archivo-de-proxy-inverso">Como debemos de editar nuestro archivo de proxy-inverso?</h3>
-<p><img alt="alt text" src="../imagenes_actividad_2_5/image-2.png" /></p>
-<h3 id="como-hacemos-el-unlink-de-nuestro-archivo-proxy-inverso">Como hacemos el unlink de nuestro archivo proxy-inverso?</h3>
-<p>Mediante el comando sudo unlink nombre-ejemplo-proxy IMPORTANTE dentro de nuestra carpeta sites-enables ya que sino, se nos borraria la configuracion de nuestro proxy-inverso de la carpeta sites-availabe si hacemos el comando desde ese directorio.</p>
-<h3 id="como-agregamos-la-nueva-configuracion-a-sites-enabled">Como agregamos la nueva configuracion a sites-enabled?</h3>
-<p>Mediante el comando sudo ln -s /etc/nginx/sites-available/nombre-ejemplo-proxy /etc/nginx/sites-enabled</p>
-<h2 id="comprobaciones">Comprobaciones.</h2>
-<p>Las comprobaciones las deberemos hacer desde un navegador externo, en el cual accederemos a nuestro ejemplo-proxy.com. Pero tenemos que tener una maquina webserver corriendo, sino, no nos redijira a ninguna parte.
-<img alt="alt text" src="../imagenes_actividad_2_5/image-3.png" /></p>
-<p>Cuando estemos dentro, clickaremos en Aceptar el riesgo y continuar y nos aparecera la redireccion correctamente. Pero aqui lo importante es ver si los certificados estan correctamente asi que accederemos al candado que tenemos en la parte superior al lado de la barra de busqueda de nuestro navegador. 
-<img alt="alt text" src="../imagenes_actividad_2_5/image-4.png" /></p>
-<p>Y nos aparecera esta configuracion. Deberemos de acceder a la parte de ver certificado y ahi, nos aparecera toda la configuracion junto con las claves.
-<img alt="alt text" src="../imagenes_actividad_2_5/image-5.png" />
-<img alt="alt text" src="../imagenes_actividad_2_5/image-6.png" /></p>
+<h1 id="practica-31-instalacion-de-tomcat-y-maven-para-el-despliegue-de-una-aplicacion-java">Práctica 3.1: Instalación de Tomcat y Maven para el despliegue de una aplicación Java.</h1>
+<p>Esta práctica consiste en realizar la instalaciñon del servidor Tomcat en una máquina nueva. Así que, lo primero que haremos, será crear una máquina nueva de debian.</p>
+<p>Una vez la tengamos, procederemos con la instalación de Tomcat.</p>
+<h3 id="instalacion-de-tomcat">Instalación de Tomcat</h3>
+<p>Para comenzar con la práctica, nos hará falta tener java instalado. Para ello, ejecutaremos el siguiente comando:</p>
+<p><code>sudo apt install defaulr-jre</code>
+<img alt="alt text" src="../imagenes_actividad_3_1/Captura%20de%20pantalla%202024-11-16%20a%20las%2011.52.26.png" /></p>
+<p>Una vez instalado, instalaremos Tomcat.
+<code>sudo apt install tomcat10 tomcat10-admin</code>
+<img alt="alt text" src="../imagenes_actividad_3_1/image.png" /></p>
+<p>Y comprobaremos los puertos que tenemos disponibles mediante <code>ss -ltn</code>
+<img alt="alt text" src="../imagenes_actividad_3_1/image-1.png" /></p>
+<h3 id="anadir-usuarios-a-nuestro-tomcat">Añadir usuarios a nuestro Tomcat.</h3>
+<p>Para poder manejar nuestro tomcat, deberemos de tener un usuario capaz de realizar las acciones. Para ello, vamos a crearnos un usuario desde el archivo donde se almacenan los usuarios de tomcat, editando el archivo de configuración.</p>
+<p><code>sudo nano /etc/tomcat10/tomcat-users.xml</code>
+<img alt="alt text" src="../imagenes_actividad_3_1/image-2.png" /></p>
+<p>Una vez dentro, deberemos de añadir la siguiente línea de código en el archivo.
+<img alt="alt text" src="../imagenes_actividad_3_1/image-3.png" /></p>
+<p>Reiniciamos nuestro servicio de Tomcat y comprobamos que se encuentre funcionando correctamente.
+<code>sudo systemctl restart tomcat10</code>
+<code>sudo systemctl status tomcat10</code>
+<img alt="alt text" src="../imagenes_actividad_3_1/image-4.png" /></p>
+<p>Y accedemos a localhost:8080/manager/html y comprobaremos que nos pide el logueo del usuario con el nombre de usuario y su contraseña.
+<img alt="alt text" src="../imagenes_actividad_3_1/image-5.png" /></p>
+<p>Y nos debería de aparecer la siguiente pantalla.
+<img alt="alt text" src="../imagenes_actividad_3_1/image-6.png" /></p>
+<p>Con esto, ya tendríamos Tomcat funcionando correctamente en nuestra máquina. Podríamos comprobarlo accediendo al ejemplo que nos aparece en la página.
+<img alt="alt text" src="../imagenes_actividad_3_1/image-7.png" /></p>
+<p>Si queremos trabajar con otro .war, deberemos de añadirlo. (El ejemplo de la documentación de moodle no funcionaba, aquí el error).
+<img alt="alt text" src="../imagenes_actividad_3_1/image-8.png" /></p>
+<p>Entonces he decidido trabajaremos con otro .war que funcione correctamente el cual mostraré mas adelante en la práctica. Ahora procederé con la instalación de maven.</p>
+<h3 id="instalacion-de-maven">Instalación de Maven</h3>
+<p>Deberemos de instalar maven para hacer los despliegues.
+Para ello haremos uso del siguiente comando.
+<code>sudo apt install maven</code>
+<img alt="alt text" src="../imagenes_actividad_3_1/image-9.png" /></p>
+<p>Comprobaremos que se ha instalado correcramente mediante el comando 
+<code>mvn --v</code>
+<img alt="alt text" src="../imagenes_actividad_3_1/image-10.png" /></p>
+<p>Ahora deberemos de configurar un usuario para hacer uso de los scripts.
+<img alt="alt text" src="../imagenes_actividad_3_1/image-11.png" /></p>
+<h3 id="clonacinon-del-repositorio-que-haremos-uso">Clonaciñon del repositorio que haremos uso.</h3>
+<p>Ahora, como dije anteriormente, haremos uso de un .war externo. Para ello haremos la clonación del repositorio del que haremos uso.
+<img alt="alt text" src="../imagenes_actividad_3_1/image-13.png" /></p>
+<p>Antes de hacer el despliegue, deberemos de configurar el despliegue desde el pom.xml para que contenga la ruta a la que queremos desplegar la aplicación.
+<img alt="alt text" src="../imagenes_actividad_3_1/image-14.png" /></p>
+<p>Una vez configurado, accedemos dentro de la carpeta del directorio que hemos clonado y ejecutamos el comando <code>mvn tomcat7:deploy</code>
+<img alt="alt text" src="../imagenes_actividad_3_1/image-15.png" /></p>
+<p>Y nos deberá de mostrar la siguiente salida de que se ha realizado correctamente.
+<img alt="alt text" src="../imagenes_actividad_3_1/image-16.png" /></p>
+<p>Y si accedemos a la página de localhost:8080/manager/html, deberemos de ver la aplicación desplegada.
+<img alt="alt text" src="../imagenes_actividad_3_1/image-17.png" />
+Y ahí la tendríamos con nombre pipedrapapeltijeras que fue la ruta que especificamos cuando modificamos nuestro pom.xml.</p>
+<p>Ahora accederemos y haremos unas pruebas. Básicamente es un piedra papel o tijeras en el que nosotros cogemos una opción y la máquina coge otra y devuelve si ganas o pierdes y un contador.
+<img alt="alt text" src="../imagenes_actividad_3_1/image-18.png" /></p>
 
 
 
