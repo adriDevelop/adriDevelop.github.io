@@ -485,9 +485,10 @@
 <p><code>sudo apt install defaulr-jre</code>
 <img alt="alt text" src="../imagenes_actividad_3_1/Captura%20de%20pantalla%202024-11-16%20a%20las%2011.52.26.png" /></p>
 <p>Una vez instalado, instalaremos Tomcat.
-<code>sudo apt install tomcat10 tomcat10-admin</code>
-<img alt="alt text" src="../imagenes_actividad_3_1/image.png" /></p>
-<p>Y comprobaremos los puertos que tenemos disponibles mediante <code>ss -ltn</code>
+<code>sudo apt install tomcat10 tomcat10-admin</code></p>
+<p><img alt="alt text" src="../imagenes_actividad_3_1/image.png" /></p>
+<p>Y comprobaremos los puertos que tenemos disponibles mediante </p>
+<p><code>ss -ltn</code>
 <img alt="alt text" src="../imagenes_actividad_3_1/image-1.png" /></p>
 <h3 id="anadir-usuarios-a-nuestro-tomcat">Añadir usuarios a nuestro Tomcat.</h3>
 <p>Para poder manejar nuestro tomcat, deberemos de tener un usuario capaz de realizar las acciones. Para ello, vamos a crearnos un usuario desde el archivo donde se almacenan los usuarios de tomcat, editando el archivo de configuración.</p>
@@ -495,43 +496,44 @@
 <img alt="alt text" src="../imagenes_actividad_3_1/image-2.png" /></p>
 <p>Una vez dentro, deberemos de añadir la siguiente línea de código en el archivo.
 <img alt="alt text" src="../imagenes_actividad_3_1/image-3.png" /></p>
-<p>Reiniciamos nuestro servicio de Tomcat y comprobamos que se encuentre funcionando correctamente.
-<code>sudo systemctl restart tomcat10</code>
+<p>Reiniciamos nuestro servicio de Tomcat y comprobamos que se encuentre funcionando correctamente.</p>
+<p><code>sudo systemctl restart tomcat10</code>
 <code>sudo systemctl status tomcat10</code>
 <img alt="alt text" src="../imagenes_actividad_3_1/image-4.png" /></p>
 <p>Y accedemos a localhost:8080/manager/html y comprobaremos que nos pide el logueo del usuario con el nombre de usuario y su contraseña.
 <img alt="alt text" src="../imagenes_actividad_3_1/image-5.png" /></p>
-<p>Y nos debería de aparecer la siguiente pantalla.
-<img alt="alt text" src="../imagenes_actividad_3_1/image-6.png" /></p>
-<p>Con esto, ya tendríamos Tomcat funcionando correctamente en nuestra máquina. Podríamos comprobarlo accediendo al ejemplo que nos aparece en la página.
-<img alt="alt text" src="../imagenes_actividad_3_1/image-7.png" /></p>
-<p>Si queremos trabajar con otro .war, deberemos de añadirlo. (El ejemplo de la documentación de moodle no funcionaba, aquí el error).
-<img alt="alt text" src="../imagenes_actividad_3_1/image-8.png" /></p>
+<p>Y nos debería de aparecer la siguiente pantalla.</p>
+<p><img alt="alt text" src="../imagenes_actividad_3_1/image-6.png" /></p>
+<p>Con esto, ya tendríamos Tomcat funcionando correctamente en nuestra máquina. Podríamos comprobarlo accediendo al ejemplo que nos aparece en la página.</p>
+<p><img alt="alt text" src="../imagenes_actividad_3_1/image-7.png" /></p>
+<p>Si queremos trabajar con otro .war, deberemos de añadirlo. (El ejemplo de la documentación de moodle no funcionaba, aquí el error).</p>
+<p><img alt="alt text" src="../imagenes_actividad_3_1/image-8.png" /></p>
 <p>Entonces he decidido trabajaremos con otro .war que funcione correctamente el cual mostraré mas adelante en la práctica. Ahora procederé con la instalación de maven.</p>
 <h3 id="instalacion-de-maven">Instalación de Maven</h3>
 <p>Deberemos de instalar maven para hacer los despliegues.
-Para ello haremos uso del siguiente comando.
-<code>sudo apt install maven</code>
+Para ello haremos uso del siguiente comando.</p>
+<p><code>sudo apt install maven</code>
 <img alt="alt text" src="../imagenes_actividad_3_1/image-9.png" /></p>
-<p>Comprobaremos que se ha instalado correcramente mediante el comando 
-<code>mvn --v</code>
+<p>Comprobaremos que se ha instalado correcramente mediante el comando</p>
+<p><code>mvn --v</code>
 <img alt="alt text" src="../imagenes_actividad_3_1/image-10.png" /></p>
-<p>Ahora deberemos de configurar un usuario para hacer uso de los scripts.
-<img alt="alt text" src="../imagenes_actividad_3_1/image-11.png" /></p>
+<p>Ahora deberemos de configurar un usuario para hacer uso de los scripts.</p>
+<p><img alt="alt text" src="../imagenes_actividad_3_1/image-11.png" /></p>
 <h3 id="clonacion-del-repositorio-que-haremos-uso">Clonación del repositorio que haremos uso.</h3>
-<p>Ahora, como dije anteriormente, haremos uso de un .war externo. Para ello haremos la clonación del repositorio del que haremos uso.
-<img alt="alt text" src="../imagenes_actividad_3_1/image-13.png" /></p>
-<p>Antes de hacer el despliegue, deberemos de configurar el despliegue desde el pom.xml para que contenga la ruta a la que queremos desplegar la aplicación.
-<img alt="alt text" src="../imagenes_actividad_3_1/image-14.png" /></p>
-<p>Una vez configurado, accedemos dentro de la carpeta del directorio que hemos clonado y ejecutamos el comando <code>mvn tomcat7:deploy</code>
+<p>Ahora, como dije anteriormente, haremos uso de un .war externo. Para ello haremos la clonación del repositorio del que haremos uso.</p>
+<p><img alt="alt text" src="../imagenes_actividad_3_1/image-13.png" /></p>
+<p>Antes de hacer el despliegue, deberemos de configurar el despliegue desde el pom.xml para que contenga la ruta a la que queremos desplegar la aplicación.</p>
+<p><img alt="alt text" src="../imagenes_actividad_3_1/image-14.png" /></p>
+<p>Una vez configurado, accedemos dentro de la carpeta del directorio que hemos clonado y ejecutamos el comando</p>
+<p><code>mvn tomcat7:deploy</code>
 <img alt="alt text" src="../imagenes_actividad_3_1/image-15.png" /></p>
-<p>Y nos deberá de mostrar la siguiente salida de que se ha realizado correctamente.
-<img alt="alt text" src="../imagenes_actividad_3_1/image-16.png" /></p>
-<p>Y si accedemos a la página de localhost:8080/manager/html, deberemos de ver la aplicación desplegada.
-<img alt="alt text" src="../imagenes_actividad_3_1/image-17.png" />
-Y ahí la tendríamos con nombre pipedrapapeltijeras que fue la ruta que especificamos cuando modificamos nuestro pom.xml.</p>
-<p>Ahora accederemos y haremos unas pruebas. Básicamente es un piedra papel o tijeras en el que nosotros cogemos una opción y la máquina coge otra y devuelve si ganas o pierdes y un contador.
-<img alt="alt text" src="../imagenes_actividad_3_1/image-18.png" /></p>
+<p>Y nos deberá de mostrar la siguiente salida de que se ha realizado correctamente.</p>
+<p><img alt="alt text" src="../imagenes_actividad_3_1/image-16.png" /></p>
+<p>Y si accedemos a la página de localhost:8080/manager/html, deberemos de ver la aplicación desplegada.</p>
+<p><img alt="alt text" src="../imagenes_actividad_3_1/image-17.png" /></p>
+<p>Y ahí la tendríamos con nombre pipedrapapeltijeras que fue la ruta que especificamos cuando modificamos nuestro pom.xml.</p>
+<p>Ahora accederemos y haremos unas pruebas. Básicamente es un piedra papel o tijeras en el que nosotros cogemos una opción y la máquina coge otra y devuelve si ganas o pierdes y un contador.</p>
+<p><img alt="alt text" src="../imagenes_actividad_3_1/image-18.png" /></p>
 
 
 
