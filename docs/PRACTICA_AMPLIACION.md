@@ -4,15 +4,15 @@ Para esta práctica, he clonado una de las máquinas de nginx anteriores que má
 ## Configuración de la máquina.
 Para comenzar, lo primero que debemos de hacer es conectarnos por ssh a nuestro servidor desde nuestra máquina local.
 Podemos hacer uso del comando ```ssh``` para conectarnos a nuestro servidor:
-![alt text](./imagenes_practica_ampliacion/image.png)
+![alt text](./imagenes_practica_ampliacion/image-1.png)
 
 Cuando ya estemos conectados mediante ssh a nuestro servidor, crearemos nuestros usuarios necesarios para la practica.
 Para ello, he hecho uso de los siguientes comandos:
-![alt text](./imagenes_practica_ampliacion/image-1.png)
+![alt text](./imagenes_practica_ampliacion/image-22.png)
 
 Pero con esto, aun no tendríamos creados correctamente nuestros usuarios ya que les tenemos que agregar una contraseña.
 Para ello, usamos los siguientes comandos:
-![alt text](./imagenes_practica_ampliacion/image-2.png)
+![alt text](./imagenes_practica_ampliacion/image-21.png)
 
 Ahora, una vez finalizada la creación de usuarios, procederemos a generas las carpetas que contendrán los archivos de los sitios web de cada usuario generado.
 
@@ -65,7 +65,7 @@ Aquí tendríamos la configuración de cada uno de los usuarios:
 ![alt text](./imagenes_practica_ampliacion/image-13.png)
 
 ## Para usuarioPrueba2
-![alt text](./imagenes_practica_ampliacion/image-14.png)
+![alt text](./imagenes_practica_ampliacion/image-23.png)
 
 Una vez generados los archivos de configuración, debemos de hacer el enlace simbólico entre este archivo y el directorio ```sites-enabled```. 
 Para ello usaremos el siguiente comando:
@@ -88,5 +88,5 @@ Con esto realizado y con nuestro servidor nginx sin errores, podremos acceder a 
 ![alt text](./imagenes_practica_ampliacion/image-20.png)
 
 ## Comprobación funcionalidad página.
-![alt text](./imagenes_practica_ampliacion/image-18.png)
+![alt text](./imagenes_practica_ampliacion/image-24.png)
 ![alt text](./imagenes_practica_ampliacion/image-19.png)
