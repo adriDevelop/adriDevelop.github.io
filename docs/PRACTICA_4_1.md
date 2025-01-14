@@ -98,11 +98,11 @@ Y cambiar en el cliente tambien el resolv.conf
 ## 8.- Comprobación del funcionamiento
 Iremos al cliente y haremos las siguientes comprobaciones:
 
-![alt text](image15.png)
+![alt text](./images_actividad_4_1/image15.png)
 
-![alt text](image16.png)
+![alt text](./images_actividad_4_1/image16.png)
 
-![alt text](image17.png)
+![alt text](./images_actividad_4_1/image17.png)
 
 
 
