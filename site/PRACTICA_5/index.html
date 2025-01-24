@@ -1,0 +1,975 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_5/">
+      
+      
+        <link rel="prev" href="../PRACTICA_4_1/">
+      
+      
+        <link rel="next" href="../PRACTICA_AMPLIACION/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
+    
+    
+      
+        <title>Práctica 5 .- Ejercicios Github - Adrian Velasco Carrasco</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#practica-5-ejercicios-github" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Adrian Velasco Carrasco" class="md-header__button md-logo" aria-label="Adrian Velasco Carrasco" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Adrian Velasco Carrasco
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Práctica 5 .- Ejercicios Github
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Adrian Velasco Carrasco" class="md-nav__button md-logo" aria-label="Adrian Velasco Carrasco" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Adrian Velasco Carrasco
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Presentación alumno
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRACTICA_2_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Práctica 2.1 - Instalación y configuración de un servidor web Nginx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRACTICA_2_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Práctica 2.2 - Autenticación en Nginx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRACTICA_2_3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practica 2.3: Proxy inverso con Nginx.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRACTICA_2_4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practica 2.4 - Balanceo de Carga con Proxy inverso Nginx.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRACTICA_2_5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practica 2.5 - Proxy inverso y balanceo de carga con SSL en NGINX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRACTICA_3_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Práctica 3.1: Instalación de Tomcat y Maven para el despliegue de una aplicación Java.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRACTICA_3_2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practica 3-2. Instalacion de Node.js Express y test de la primera aplicación.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRACTICA_4_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Práctica 4-1 Configuración de un servidor DNS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Práctica 5 .- Ejercicios Github
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Práctica 5 .- Ejercicios Github
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#primera-parte-repositorio-deaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primera parte .- Repositorio DEAW
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#segunda-parte-readme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segunda parte .- README
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tercera-parte-commit-al-archivo-readmemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tercera parte .- Commit al archivo README.md
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuarta-parte-push-del-archivo-readmemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuarta parte .- Push del archivo README.md
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quinta-parte-ignoracion-de-archivos-mediante-el-archivo-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quinta parte .- Ignoración de archivos mediante el archivo ".gitignore"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sexta-parte-crear-el-fichero-1txt-y-agregarlo-al-repositorio-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sexta parte .- Crear el fichero 1.txt y agregarlo al repositorio local
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#septima-parte-crear-el-tag-v01" class="md-nav__link">
+    <span class="md-ellipsis">
+      Séptima parte .- Crear el tag v0.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#octava-parte-subir-el-tag-v01" class="md-nav__link">
+    <span class="md-ellipsis">
+      Octava parte .- Subir el tag v0.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#novena-parte-cuenta-de-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Novena parte .- Cuenta de github
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decima-parte-uso-social-de-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Décima parte .- Uso social de Github
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undecima-parte-crear-una-tabla-mencionando-a-nuestros-companeros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undécima parte .- Crear una tabla mencionando a nuestros compañeros
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duodecima-parte-creacion-de-una-rama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duodécima parte .- Creación de una rama
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimotercera-parte-anadir-un-fichero-a-la-rama-v02" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimotercera parte .- Añadir un fichero a la rama v0.2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimocuarta-parte-merge-directo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimocuarta parte .- Merge directo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimoquinta-parte-merge-con-conflicto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimoquinta parte .- Merge con conflicto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimosexta-parte-listado-de-ramas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimosexta parte .- Listado de ramas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimoseptima-parte-arreglar-conflicto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimoséptima parte .- Arreglar conflicto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimoctava-parte-borrar-rama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimoctava parte .- Borrar rama
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimonovena-parte-listado-de-cambios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimonovena parte .- Listado de cambios
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PRACTICA_AMPLIACION/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Practica ampliación: Configuración de un servidor Nginx con Hosts Virtuales y directorios de usuario.
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#primera-parte-repositorio-deaw" class="md-nav__link">
+    <span class="md-ellipsis">
+      Primera parte .- Repositorio DEAW
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#segunda-parte-readme" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segunda parte .- README
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tercera-parte-commit-al-archivo-readmemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tercera parte .- Commit al archivo README.md
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cuarta-parte-push-del-archivo-readmemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cuarta parte .- Push del archivo README.md
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quinta-parte-ignoracion-de-archivos-mediante-el-archivo-gitignore" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quinta parte .- Ignoración de archivos mediante el archivo ".gitignore"
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sexta-parte-crear-el-fichero-1txt-y-agregarlo-al-repositorio-local" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sexta parte .- Crear el fichero 1.txt y agregarlo al repositorio local
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#septima-parte-crear-el-tag-v01" class="md-nav__link">
+    <span class="md-ellipsis">
+      Séptima parte .- Crear el tag v0.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#octava-parte-subir-el-tag-v01" class="md-nav__link">
+    <span class="md-ellipsis">
+      Octava parte .- Subir el tag v0.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#novena-parte-cuenta-de-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Novena parte .- Cuenta de github
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decima-parte-uso-social-de-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      Décima parte .- Uso social de Github
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#undecima-parte-crear-una-tabla-mencionando-a-nuestros-companeros" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undécima parte .- Crear una tabla mencionando a nuestros compañeros
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#duodecima-parte-creacion-de-una-rama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Duodécima parte .- Creación de una rama
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimotercera-parte-anadir-un-fichero-a-la-rama-v02" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimotercera parte .- Añadir un fichero a la rama v0.2
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimocuarta-parte-merge-directo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimocuarta parte .- Merge directo
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimoquinta-parte-merge-con-conflicto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimoquinta parte .- Merge con conflicto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimosexta-parte-listado-de-ramas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimosexta parte .- Listado de ramas
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimoseptima-parte-arreglar-conflicto" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimoséptima parte .- Arreglar conflicto
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimoctava-parte-borrar-rama" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimoctava parte .- Borrar rama
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#decimonovena-parte-listado-de-cambios" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decimonovena parte .- Listado de cambios
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="practica-5-ejercicios-github">Práctica 5  .- Ejercicios Github</h1>
+<h2 id="primera-parte-repositorio-deaw">Primera parte .- Repositorio DEAW</h2>
+<p>Lo primero que debemos de hacer es crear el repositorio DEAW si aún no lo tenemos creado:
+<img alt="alt text" src="../imagenes_actividad_5/image-2.png" /></p>
+<p>Seguimos clonandolo en nuestro repositorio local de la siguiente manera:
+<img alt="alt text" src="../imagenes_actividad_5/image.png" /></p>
+<h2 id="segunda-parte-readme">Segunda parte .- README</h2>
+<p>Ahora, debemos de generar el README para nuestro repositorio. Para ello haremos lo siguiente:
+<img alt="alt text" src="../imagenes_actividad_5/image-1.png" /></p>
+<p>Seguiremos, haciendo un <code>git add README.md</code> para que podamos hacerle el commit al archivo y despues realizar el push del mismo.
+<img alt="alt text" src="../imagenes_actividad_5/image-3.png" /></p>
+<h2 id="tercera-parte-commit-al-archivo-readmemd">Tercera parte .- Commit al archivo README.md</h2>
+<p>Y hacemos un commit del archivo.
+<img alt="alt text" src="../imagenes_actividad_5/image-4.png" /></p>
+<h2 id="cuarta-parte-push-del-archivo-readmemd">Cuarta parte .- Push del archivo README.md</h2>
+<p>Y finalmente el push.
+<img alt="alt text" src="../imagenes_actividad_5/image-5.png" /></p>
+<h2 id="quinta-parte-ignoracion-de-archivos-mediante-el-archivo-gitignore">Quinta parte .- Ignoración de archivos mediante el archivo ".gitignore"</h2>
+<p>Lo primero que debemos hacer en este paso es generar un fichero <code>privado.txt</code></p>
+<p>Tras la creación de este archivo, generaremos el directorio <code>/privada</code>
+<img alt="alt text" src="../imagenes_actividad_5/image-6.png" /></p>
+<p>Y para que no los tenga en cuenta git, debemos de generar un archivo .gitignore para que ignore tanto el archivo <code>privado.txt</code> y el directorio <code>/privada</code>
+<img alt="alt text" src="../imagenes_actividad_5/image-7.png" /></p>
+<h2 id="sexta-parte-crear-el-fichero-1txt-y-agregarlo-al-repositorio-local">Sexta parte .- Crear el fichero 1.txt y agregarlo al repositorio local</h2>
+<p>Se creará y agregará de la siguente manera:
+<img alt="alt text" src="../imagenes_actividad_5/image-8.png" /></p>
+<h2 id="septima-parte-crear-el-tag-v01">Séptima parte .- Crear el tag v0.1</h2>
+<p>Lo creamos usando el comando <code>git tag</code>
+<img alt="alt text" src="../imagenes_actividad_5/image-9.png" /></p>
+<h2 id="octava-parte-subir-el-tag-v01">Octava parte .- Subir el tag v0.1</h2>
+<p><img alt="alt text" src="../imagenes_actividad_5/image-10.png" /></p>
+<h2 id="novena-parte-cuenta-de-github">Novena parte .- Cuenta de github</h2>
+<p>Deberemos de agregarle a la cuenta de github una foto (si no la tenemos agregada ya)
+<img alt="alt text" src="../imagenes_actividad_5/image-12.png" /></p>
+<p>También, activar la protección doble factor en la cuenta de github, para ello:</p>
+<p>1.- Deberemos de irnos a la configuración de nuestro perfil y encontrar " Two-factor authentication"
+<img alt="alt text" src="../imagenes_actividad_5/image-11.png" /></p>
+<p>2.- Tras eso, deberemos de seguir los pasos que nos diga la web. El primero es descargarnos la app móvil y darle permiso desde el teléfono.
+<img alt="alt text" src="../imagenes_actividad_5/image-13.png" /></p>
+<p>3.- El siguiente paso sería escanear un QR en el que agregaremos a nuestro teléfono el <code>Two-factor authentication</code> y nos dará un código cada vez que queramos acceder a nuestra cuenta. (no pongo captura por seguridad)</p>
+<p>4.- El siguiente paso, nos mostrará una serie de códigos de recuperacion que deberemos de guardar en un lugar seguro. Descargaremos y proseguimos.</p>
+<p>5.- Ya estaríai activado la protección doble factor en nuestra cuenta de github.
+<img alt="alt text" src="../imagenes_actividad_5/image-14.png" /></p>
+<h2 id="decima-parte-uso-social-de-github">Décima parte .- Uso social de Github</h2>
+<p>Deberemos de seguir a dos compañeros de clase en su cuenta de github
+<img alt="alt text" src="../imagenes_actividad_5/image-15.png" /></p>
+<p>Cuando lo tengamos, deberemos de seguir los repositorios de nuestros compañeros y hacerle un star
+<img alt="alt text" src="../imagenes_actividad_5/image-16.png" /></p>
+<h2 id="undecima-parte-crear-una-tabla-mencionando-a-nuestros-companeros">Undécima parte .- Crear una tabla mencionando a nuestros compañeros</h2>
+<p>Para ello, en nuestro README.md, crearemos una tabla en la que mostraremos el nombre y un enlace para poder ir a su repositorio.
+<img alt="alt text" src="../imagenes_actividad_5/image-17.png" /></p>
+<h2 id="duodecima-parte-creacion-de-una-rama">Duodécima parte .- Creación de una rama</h2>
+<p>A continuación, deberemos de crearnos una rama con nombre v0.2 y posicionarnos en ella.
+<img alt="alt text" src="../imagenes_actividad_5/image-18.png" /></p>
+<h2 id="decimotercera-parte-anadir-un-fichero-a-la-rama-v02">Decimotercera parte .- Añadir un fichero a la rama v0.2</h2>
+<p>Ahora, deberemos de crear un fichero <code>2.txt</code> y lo añadiremos a la rama v0.2
+<img alt="alt text" src="../imagenes_actividad_5/image-19.png" /></p>
+<h2 id="decimocuarta-parte-merge-directo">Decimocuarta parte .- Merge directo</h2>
+<p>Ahora, deberemos de posicionarnos en la rama master y realizaremos un merge de la rama v0.2 en la rama master, para ello vamos a usar los siguientes comandos:</p>
+<p>1.- Para posicionarnos en la master (que lo tengo nombrado main)
+<img alt="alt text" src="../imagenes_actividad_5/image-20.png" /></p>
+<p>2.- Para hacer el merge de la rama v0.2 en la rama master
+<img alt="alt text" src="../imagenes_actividad_5/image-21.png" /></p>
+<h2 id="decimoquinta-parte-merge-con-conflicto">Decimoquinta parte .- Merge con conflicto</h2>
+<p>Seguiremos ahora generando un conflicto entre las ramas.</p>
+<p>Para ello, deberemos de hacer lo siguiente:</p>
+<p>1.- En la rama master, editaremos el fichero <code>1.txt</code> y haremos un commit.
+<img alt="alt text" src="../imagenes_actividad_5/image-22.png" /></p>
+<p><img alt="alt text" src="../imagenes_actividad_5/image-23.png" /></p>
+<p>2.- En la rama v0.2 editaremos el fichero <code>1.txt</code> y haremos el commit.
+<img alt="alt text" src="../imagenes_actividad_5/image-24.png" /></p>
+<p><img alt="alt text" src="../imagenes_actividad_5/image-25.png" /></p>
+<p><img alt="alt text" src="../imagenes_actividad_5/image-26.png" /></p>
+<p>3.- Ahora, nos posicionaremos en la rama master y haremos un merge con la rama v0.2.
+<img alt="alt text" src="../imagenes_actividad_5/image-27.png" /></p>
+<p><img alt="alt text" src="../imagenes_actividad_5/image-28.png" /></p>
+<h2 id="decimosexta-parte-listado-de-ramas">Decimosexta parte .- Listado de ramas</h2>
+<p>Ahora, listaremos las ramas con merge y sin merge. Para ello, usaremos lo siguiente:
+<img alt="alt text" src="../imagenes_actividad_5/image-29.png" /></p>
+<h2 id="decimoseptima-parte-arreglar-conflicto">Decimoséptima parte .- Arreglar conflicto</h2>
+<p>Ahora, para arreglar el conflicto, deberemos de editar el archivo de texto <code>1.txt</code> y una vez editado, haremos un commit y un push.
+<img alt="alt text" src="../imagenes_actividad_5/image-30.png" /></p>
+<p><img alt="alt text" src="../imagenes_actividad_5/image-31.png" /></p>
+<p><img alt="alt text" src="../imagenes_actividad_5/image-32.png" /></p>
+<h2 id="decimoctava-parte-borrar-rama">Decimoctava parte .- Borrar rama</h2>
+<p>Seguido de esto, procederemos a borrar la rama v0.2
+<img alt="alt text" src="../imagenes_actividad_5/image-33.png" /></p>
+<h2 id="decimonovena-parte-listado-de-cambios">Decimonovena parte .- Listado de cambios</h2>
+<p>Y para finalizar, realizaremos un listado de los distintos commits con sus ramas y sus tags
+<img alt="alt text" src="../imagenes_actividad_5/image-34.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+    
+  </body>
+</html>
