@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_2_3/">
+        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_6_1/">
       
       
-        <link rel="prev" href="../PRACTICA_2_2/">
+        <link rel="prev" href="../PRACTICA_5_1/">
       
       
-        <link rel="next" href="../PRACTICA_2_4/">
+        <link rel="next" href="../PRACTICA_AMPLIACION/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Practica 2.3: Proxy inverso con Nginx. - Adrian Velasco Carrasco</title>
+        <title>Práctica 6.1.- Dockerización del despliegue de una Aplicación con Node.js - Adrian Velasco Carrasco</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-23-proxy-inverso-con-nginx" class="md-skip">
+        <a href="#practica-61-dockerizacion-del-despliegue-de-una-aplicacion-con-nodejs" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Practica 2.3: Proxy inverso con Nginx.
+              Práctica 6.1.- Dockerización del despliegue de una Aplicación con Node.js
             
           </span>
         </div>
@@ -250,30 +250,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Practica 2.3: Proxy inverso con Nginx.
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../PRACTICA_2_3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -282,35 +262,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#nginx-proxy-inverso" class="md-nav__link">
-    <span class="md-ellipsis">
-      Nginx proxy inverso
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -459,10 +410,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../PRACTICA_6_1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Práctica 6.1.- Dockerización del despliegue de una Aplicación con Node.js
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -471,6 +442,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#despliegue-con-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      Despliegue con Docker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Compose
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -522,9 +531,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#nginx-proxy-inverso" class="md-nav__link">
+  <a href="#despliegue-con-docker" class="md-nav__link">
     <span class="md-ellipsis">
-      Nginx proxy inverso
+      Despliegue con Docker
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    <span class="md-ellipsis">
+      Docker Compose
     </span>
   </a>
   
@@ -545,25 +563,40 @@
                   
 
 
-<h1 id="practica-23-proxy-inverso-con-nginx">Practica 2.3: Proxy inverso con Nginx.</h1>
-<p>Para esta practica, deberemos de clonar antes de nada nuestra maquina principal para crear la proxy, teniendo la precaucion de que al clonarla, tenemos que cambiarle la direccion mac a esa maquina para que no haya conflictos en la red ya que tendrian la misma ip.</p>
-<p><img alt="alt text" src="../imagenes_actividad_2_3/image.png" /></p>
-<p>Una vez hecho esto, deberemos de irnos a nuestro proxy y cambiar el nombre que tuvieramos de nuestra web por el de webserver en todas las coincidencias, tanto nombre de archivo como en la configuracion.</p>
-<p>Tambien deberemnos de agregar en el archivo hosts de nuestro proxy y de nuestra maquina virtual las ip de nuestro webserver y de nuestro proxy.</p>
-<p><img alt="alt text" src="../imagenes_actividad_2_3/image-1.png" /></p>
-<p><img alt="alt text" src="../imagenes_actividad_2_3/image-2.png" /></p>
-<p>Y tras esto deberemos de eliminar el enlace simbolico que habia con nuestro archivo y hacerlo con el nuevo.</p>
-<p><img alt="alt text" src="../imagenes_actividad_2_3/image-3.png" /></p>
-<p><img alt="alt text" src="../imagenes_actividad_2_3/image-4.png" /></p>
-<p>Ya terminado con esto, procederemos ahora a reiniciar el servicio de nginx.</p>
-<h3 id="nginx-proxy-inverso">Nginx proxy inverso</h3>
-<p>Deberemos de crearnos en nuestro proxy inverso un archivo con el nombre ejemplo-proxy. Este archivo tendra lo siguiente:</p>
-<p><img alt="alt text" src="../imagenes_actividad_2_3/image-7.png" /></p>
-<p>Deberemos de hacer las comprobaciones añadiendo las cabeceras para que, cuando nuestro proxy escuche y redireccione a webserver, se manden las dos cabeceras, la del proxy y la del webserver.</p>
-<p>Para ello, deberemos de añadir la siguiente linea a nuestro archivo de configuracion.</p>
-<p><code>add_header Host nombre_del_host;</code></p>
-<p>Obviamente, cuando hagamos esto, deberemos de reiniciar nuestro servicio de nginx. Y una vez reiniciado, realizaremos las comprobaciones.</p>
-<p><img alt="alt text" src="../imagenes_actividad_2_3/image-6.png" /></p>
+<h1 id="practica-61-dockerizacion-del-despliegue-de-una-aplicacion-con-nodejs">Práctica 6.1.- Dockerización del despliegue de una Aplicación con Node.js</h1>
+<h2 id="despliegue-con-docker">Despliegue con Docker</h2>
+<p>Lo primero que deberemos de hacer es instalar Docker en nuestro sistema.
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-78.png" /></p>
+<p>Tras esto, el siguiente paso que deberemos de realizar será el clonar el repositoprio de GitHub <a href="https://github.com/raul-profesor/DAW_practica_6.1_2024.git">https://github.com/raul-profesor/DAW_practica_6.1_2024.git</a>
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-79.png" /></p>
+<p>Cuando tengamos el repositorio clonado, deberemos modificar el Dockerfile que vendrá con algunos datos en blanco que deberemos de rellenar de la siguiente manera
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-80.png" /></p>
+<p>Una vez editado el archivo, deberemos de construir la imagen librodirecciones
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-81.png" />
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-82.png" /></p>
+<p>E iniciaremos el contenedor para que escuche peticiones en el puerto 3000 siguiendo este comando
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-83.png" /></p>
+<p>Y al probarlo, nos debería de salir la siguiente pestaña
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-84.png" /></p>
+<h2 id="docker-compose">Docker Compose</h2>
+<p>Para poder hacer uso de Docker Compose, deberemos de instalarlo en nuestro sistema.
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-85.png" /></p>
+<p>Comprobaremos la versión que se nos ha instalado de la siguiente manera
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-86.png" /></p>
+<p>Ahora, deberemos de crear un archivo llamado docker-compose.yml en el que deberemos de añadir el siguiente contenido
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-87.png" /></p>
+<p>Una vez creado el archivo, debemos correr la imagen para que se creen todas las tablas que hemos definido en el archivo docker-compose.yml
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-88.png" /></p>
+<p>Una vez ejecutado el comando, deberemos de ejecutar el siguiente comando para que se inicie el contenedor
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-89.png" /></p>
+<p>Y para probar que funciona correctamente, ejecutaremos lo siguiente
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-90.png" />
+<img alt="alt text" src="../imagenes_actgividad_6_1/image-91.png" /></p>
+<h1 id="ejercicios">Ejercicios</h1>
+<p>Añade una persona: <code>curl -X PUT http://localhost:3000/persons -H'Content-Type: application/json' -d '{"id": 1, "firstName": "Raúl", "lastName": "Profesor"}</code></p>
+<p>Listar todas las personas: <code>curl -X GET http://localhost:3000/persons/all -H 'Content-Type: application/json'</code></p>
+<p>Buscar una persona por ID: <code>curl -X GET http://localhost:3000/persons/1 -H 'Content-Type: application/json'</code></p>
+<p>Eliminar una persona: <code>curl -X DELETE http://localhost:3000/persons/1 -H 'Content-Type: application/json'</code></p>
 
 
 
