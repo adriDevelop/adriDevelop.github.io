@@ -442,6 +442,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Practica 6_2 .- Despliegue de una aplicación PHP con Nginx y MySQL usando Docker y docker-compose
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -451,6 +462,97 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lo-primero-que-debemos-de-hacer-es-conectarnos-mediante-ssh-a-nuestro-servidor-desde-nuestra-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lo primero que debemos de hacer es conectarnos mediante ssh a nuestro servidor desde nuestra terminal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-estructura-de-directorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.- Estructura de directorios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-crear-archivo-docker-compose-con-configuracion-de-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.- Crear archivo docker-compose con configuración de Nginx
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-comprobacion-de-funcionamiento-de-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.- Comprobación de funcionamiento de Nginx
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-creacion-del-contenedor-de-php" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.- Creación del contenedor de PHP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-creacion-del-contenedor-para-los-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.- Creación del contenedor para los datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-creacion-del-contenedor-de-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.- Creación del contenedor de MySQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-comprobacion-de-funcionamiento-de-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.- Comprobación de funcionamiento de la aplicación
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -496,6 +598,86 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#lo-primero-que-debemos-de-hacer-es-conectarnos-mediante-ssh-a-nuestro-servidor-desde-nuestra-terminal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lo primero que debemos de hacer es conectarnos mediante ssh a nuestro servidor desde nuestra terminal
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-estructura-de-directorios" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.- Estructura de directorios
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-crear-archivo-docker-compose-con-configuracion-de-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.- Crear archivo docker-compose con configuración de Nginx
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-comprobacion-de-funcionamiento-de-nginx" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.- Comprobación de funcionamiento de Nginx
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-creacion-del-contenedor-de-php" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.- Creación del contenedor de PHP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-creacion-del-contenedor-para-los-datos" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.- Creación del contenedor para los datos
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-creacion-del-contenedor-de-mysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.- Creación del contenedor de MySQL
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-comprobacion-de-funcionamiento-de-la-aplicacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      8.- Comprobación de funcionamiento de la aplicación
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -510,6 +692,54 @@
 
 
 <h1 id="practica-6_2-despliegue-de-una-aplicacion-php-con-nginx-y-mysql-usando-docker-y-docker-compose">Practica 6_2 .- Despliegue de una aplicación PHP con Nginx y MySQL usando Docker y docker-compose</h1>
+<h2 id="lo-primero-que-debemos-de-hacer-es-conectarnos-mediante-ssh-a-nuestro-servidor-desde-nuestra-terminal">Lo primero que debemos de hacer es conectarnos mediante ssh a nuestro servidor desde nuestra terminal</h2>
+<p><img alt="alt text" src="../imagenes_actividad_6_2/image-78.png" /></p>
+<h2 id="2-estructura-de-directorios">2.- Estructura de directorios</h2>
+<p>Debemos de configurar la siguiente estructura de directorios 
+<img alt="alt text" src="../imagenes_actividad_6_2/image-79.png" /></p>
+<p>Mediante estos comandos
+<img alt="alt text" src="../imagenes_actividad_6_2/image-80.png" /></p>
+<h2 id="3-crear-archivo-docker-compose-con-configuracion-de-nginx">3.- Crear archivo docker-compose con configuración de Nginx</h2>
+<p>Deberemos de crear nuestro archivo docker-compose.yml con la siguiente configuración para instalar la imagen de nginx
+<img alt="alt text" src="../imagenes_actividad_6_2/image-81.png" /></p>
+<h2 id="4-comprobacion-de-funcionamiento-de-nginx">4.- Comprobación de funcionamiento de Nginx</h2>
+<p><img alt="alt text" src="../imagenes_actividad_6_2/image-82.png" /></p>
+<p><img alt="alt text" src="../imagenes_actividad_6_2/image-84.png" /></p>
+<p><img alt="alt text" src="../imagenes_actividad_6_2/image-83.png" /></p>
+<h2 id="5-creacion-del-contenedor-de-php">5.- Creación del contenedor de PHP</h2>
+<p>Ahora, deberemos de editar el archivo index.php que se encuentra en www/html/index.php con el siguiente contenido
+<img alt="alt text" src="../imagenes_actividad_6_2/image-85.png" /></p>
+<p>Tras esto, deberemos de configurar el archivo .conf de ./nginx/default.conf con el siguiente contenido
+<img alt="alt text" src="../imagenes_actividad_6_2/image-87.png" /></p>
+<p>Una vez realizada la configuración, deberemos de editar nuestro Dockerfile de la misma direccion ./nginx/Dockerfile con el siguiente contenido
+<img alt="alt text" src="../imagenes_actividad_6_2/image-88.png" /></p>
+<p>Y editaremos la configuración de nuestro docker-compose.yml con la siguiente configuración
+<img alt="alt text" src="../imagenes_actividad_6_2/image-89.png" /></p>
+<p>Levantaremos de nuevo nuestro contenedor mediante el comando <code>docker-compose up -d</code>
+<img alt="alt text" src="../imagenes_actividad_6_2/image-91.png" /></p>
+<p>Y se deberá de ver lo siguiente
+<img alt="alt text" src="../imagenes_actividad_6_2/image-90.png" /></p>
+<h2 id="6-creacion-del-contenedor-para-los-datos">6.- Creación del contenedor para los datos</h2>
+<p>Deberemos de editar nuestro docker-compose.yml con el siguiente contenido
+<img alt="alt text" src="../imagenes_actividad_6_2/image-92.png" /></p>
+<p>Y deberemos de levantar el contenedor mediante el comando <code>docker-compose up -d</code>
+<img alt="alt text" src="../imagenes_actividad_6_2/image-93.png" /></p>
+<h2 id="7-creacion-del-contenedor-de-mysql">7.- Creación del contenedor de MySQL</h2>
+<p>Antes de instalar nuestro contenedor MySQL, deberemos de editar nuestro Dockerfile situado en la ruta ./php/Dockerfile con la siguiente configuración
+<img alt="alt text" src="../imagenes_actividad_6_2/image-94.png" /></p>
+<p>Después, deberemos de actualizar nuestro docker-compose.yml con lo siguiente
+<img alt="alt text" src="../imagenes_actividad_6_2/image-96.png" /></p>
+<p>Y tambien, editaremos nuestro index.php situado en ./www/html/index.php con el siguiente contenido
+<img alt="alt text" src="../imagenes_actividad_6_2/image-95.png" /></p>
+<p>Y deberemos de levantar nuestro contenedor mediante el comando <code>docker-compose up -d</code></p>
+<p>Y se verá lo siguiente
+<img alt="alt text" src="../imagenes_actividad_6_2/image-97.png" /></p>
+<h2 id="8-comprobacion-de-funcionamiento-de-la-aplicacion">8.- Comprobación de funcionamiento de la aplicación</h2>
+<p>Ahora, cambiaremos la configuración de nuestro archivo index.php situado en ./www/html/index.php con el siguiente contenido para que inicie con el usuario root y podamos ver las bases de datos
+<img alt="alt text" src="../imagenes_actividad_6_2/image-98.png" /></p>
+<p>Levanta de nuevo el contenedor mediante el comando <code>docker-compose up -d</code></p>
+<p>Y se deberá de ver lo siguiente
+<img alt="alt text" src="../imagenes_actividad_6_2/image-99.png" /></p>
 
 
 
