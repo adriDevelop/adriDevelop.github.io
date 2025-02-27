@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_2_4/">
+        <link rel="canonical" href="https://adridevelop.github.io/PRACTICA_6_3/">
       
       
-        <link rel="prev" href="../PRACTICA_2_3/">
+        <link rel="prev" href="../PRACTICA_6_2/">
       
       
-        <link rel="next" href="../PRACTICA_2_5/">
+        <link rel="next" href="../PRACTICA_AMPLIACION/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Practica 2.4 - Balanceo de Carga con Proxy inverso Nginx. - Adrian Velasco Carrasco</title>
+        <title>Páctica 6.3.- Servidor web con usuarios autenticados mediante servicio de directorio (LDAP) - Adrian Velasco Carrasco</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#practica-24-balanceo-de-carga-con-proxy-inverso-nginx" class="md-skip">
+        <a href="#pactica-63-servidor-web-con-usuarios-autenticados-mediante-servicio-de-directorio-ldap" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Practica 2.4 - Balanceo de Carga con Proxy inverso Nginx.
+              Páctica 6.3.- Servidor web con usuarios autenticados mediante servicio de directorio (LDAP)
             
           </span>
         </div>
@@ -270,19 +270,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../PRACTICA_2_4/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -291,7 +282,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -460,10 +450,30 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../PRACTICA_6_3/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Páctica 6.3.- Servidor web con usuarios autenticados mediante servicio de directorio (LDAP)
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -472,6 +482,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-directorio-indexhtml" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.- Directorio index.html:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-directorio-conf" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.- Directorio conf:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-fichero-docker-composeyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.- Fichero docker-compose.yml:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-comprobacion-de-funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.- Comprobación de funcionamiento:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -516,6 +582,50 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-directorio-indexhtml" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.- Directorio index.html:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-directorio-conf" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.- Directorio conf:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-fichero-docker-composeyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.- Fichero docker-compose.yml:
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-comprobacion-de-funcionamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.- Comprobación de funcionamiento:
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -529,27 +639,50 @@
                   
 
 
-<h1 id="practica-24-balanceo-de-carga-con-proxy-inverso-nginx">Practica 2.4 - Balanceo de Carga con Proxy inverso Nginx.</h1>
-<p>Lo primero que deberemos de hacer sera crear nuestra copia de nuestra maquina virtual, teniendo asi 2 maquinas con servidores web distintos y un proxy reutilizado de la practica anterior. Este servira para que realice el balanceo de carga entre los dos servidores web.</p>
-<h1 id="configuracion-del-nuevo-webserver2">Configuracion del nuevo webserver2.</h1>
-<h2 id="unlink-webserver-clonado">Unlink webserver clonado.</h2>
-<p>Hacemos unlink del webserver que teniamos configurado de la maquina que ha sido clonada y configuramos el nuevo webserver.
-<img alt="alt text" src="../imagenes_actividad_2_4/image-1.png" /></p>
-<h2 id="ningx-proxy-inverso">Ningx proxy inverso.</h2>
-<p>Tras esto, deberemos modificar tambien el archivo webserver, ya que la configuracion es de la maquina anterior.
-<img alt="alt text" src="../imagenes_actividad_2_4/image.png" /></p>
-<p><img alt="alt text" src="../imagenes_actividad_2_4/image-5.png" /></p>
-<h2 id="nginx-servidor-webserver">Nginx servidor webserver.</h2>
-<p>Deberemos de configurar la maquina proxy escuche a la maquina clonada (webserver2), como hicimos en la anterior practica con la maquina clonada(webserver1), y le agregaremos la cabecera para este webserver(webserver2) y se creara un bloque upstring que lo que hara sera englobar a los dos servidores webserver para que cuando haya sobrecarga, pueda redirigir a webserver1 o a webserver2.</p>
-<h2 id="configuracion-archivo-ejemplo-proxy-de-la-maquina-proxy">Configuracion archivo ejemplo-proxy de la maquina proxy.</h2>
-<p><img alt="alt text" src="../imagenes_actividad_2_4/image-2.png" /></p>
-<h2 id="configuracion-archivo-etchosts-de-la-maquina-local">Configuracion archivo /etc/hosts de la maquina local.</h2>
-<p><img alt="alt text" src="../imagenes_actividad_2_4/image-6.png" /></p>
-<h2 id="comprobaciones">Comprobaciones.</h2>
-<p>Comprobamos que cuando la maquina webserver1 este caida(o apagada) o sobrecargada, se redirija a la maquina webserver2, comprobandolo mediante el header que envia la pagina.
-<img alt="alt text" src="../imagenes_actividad_2_4/image-7.png" /></p>
-<p>Y despues hacemos lo correspondiente con la otra maquina.
-<img alt="alt text" src="../imagenes_actividad_2_4/image-8.png" /></p>
+<h1 id="pactica-63-servidor-web-con-usuarios-autenticados-mediante-servicio-de-directorio-ldap">Páctica 6.3.- Servidor web con usuarios autenticados mediante servicio de directorio (LDAP)</h1>
+<h2 id="1-directorio-indexhtml">1.- Directorio index.html:</h2>
+<p>Lo primero que haremos sera crear un directorio "app" que contendrá nuestro index.html con el siguiente contenido:
+<img alt="alt text" src="../imagenes_actividad_6_3/image-78.png" /></p>
+<h2 id="2-directorio-conf">2.- Directorio conf:</h2>
+<p>Continuaremos creando un directorio conf donde tendremos almacenado nuestro fichero ldap_nginx.conf con el siguiente contenido:
+<img alt="alt text" src="../imagenes_actividad_6_3/image-79.png" /></p>
+<h2 id="3-fichero-docker-composeyml">3.- Fichero docker-compose.yml:</h2>
+<p>Ahora, crearemos nuestro Dockerfile con la configuración necesaria para instalar todos los servicios necesarios para tener nuestro servidor web con usuarios autenticados mediante servicio de directorio (LDAP):
+<img alt="alt text" src="../imagenes_actividad_6_3/image-80.png" /></p>
+<p>Y lo desplegaremos mediante el comando:
+<code>docker-compose up -d</code></p>
+<h2 id="4-comprobacion-de-funcionamiento">4.- Comprobación de funcionamiento:</h2>
+<p>Ahora, comprobaremos que todo funciona correctamente. Para ello, iremos a nuestro navegador y escribiremos la dirección IP de nuestro servidor seguido del puerto 8081 o el que hayamos configurado en el fichero docker-compose.yml:
+<img alt="alt text" src="../imagenes_actividad_6_3/image-81.png" /></p>
+<p>Y nos al loguearnos nos debería de aparecer la siguente pantalla:
+<img alt="alt text" src="../imagenes_actividad_6_3/image-82.png" /></p>
+<h1 id="despliegue-con-docker-de-php-apache-con-autenticacion-ldap">Despliegue con Docker de PHP + Apache con autenticación LDAP</h1>
+<p>Ahora, continuaremos con la segunda parte de la practica que es el despliegue de php con Docker y un Apache con autenticación LDAP.</p>
+<p>Antes de nada, nos tendremos que crear una carpeta llamada Docker, donde tendremos todos los archivos que vamos a configurar a continuación:</p>
+<h2 id="1-fichero-indexphp">1.- Fichero index.php</h2>
+<p>Lo primero que deberemos de realizar es crearnos un fichero index.php con el siguiente contenido:
+<img alt="alt text" src="../imagenes_actividad_6_3/image-83.png" /></p>
+<h2 id="2-creacion-del-fichero-dockerfile">2.- Creación del fichero DockerFile</h2>
+<p>Ahora, continuaremos creando nuestro Dockerfile donde realizaremos las siguientes configuraciones:
+<img alt="alt text" src="../imagenes_actividad_6_3/image-84.png" /></p>
+<h2 id="3-creacion-de-fichero-ldap-democonf">3.- Creación de fichero ldap-demo.conf</h2>
+<p>Continuamos creando el fichero ldap-demo.conf con el siguiente contenido:
+<img alt="alt text" src="../imagenes_actividad_6_3/image-85.png" /></p>
+<h2 id="4-creacion-del-fichero-htaccess">4.- Creación del fichero .htaccess</h2>
+<p>Y para finalizar, crearemos nuestro fichero .htaccess con el siguiente contenido:
+<img alt="alt text" src="../imagenes_actividad_6_3/image-86.png" /></p>
+<h2 id="5-comprobacion-de-funcionamiento">5.- Comprobación de funcionamiento</h2>
+<p>Para poder comprobar que todo ha ido bien, tendremos que construir nuestra imagen de docker mediante el comando <code>docker build . -t docker_ldap -f Dockerfile</code>
+<img alt="alt text" src="../imagenes_actividad_6_3/image-87.png" /></p>
+<p>Una vez la hayamos contruido, deberemos de ejecutarla para ello, usaremos el siguiente comando:
+<code>sudo docker run     -p 3000:80     --name nombre_que_le_quieras_dar_a_la_imagen     -e LDAP_BIND_ON='uid=admin,cn=users,cn=accounts,dc=demo1,dc=freeipa,dc=org'     -e LDAP_PASSWORD='Secret123'     -e LDAP_URL='LDAP://ipa.demo1.freeipa.org' docker_ldap</code>
+<img alt="alt text" src="../imagenes_actividad_6_3/image-88.png" /></p>
+<p>Y en nuestro navegador, buscaremos la direccion ip de nuestro servidor, seguido del puerto 3000 de la siguiente manera:
+```ip_servidor:3000````</p>
+<p>Y nos aparecerá una pantalla con el logueo de nuestro servidor donde deberemos de introducir el usuario y la contraseña que hemos configurado en nuestro servidor LDAP:
+<img alt="alt text" src="../imagenes_actividad_6_3/image-89.png" /></p>
+<p>Una vez nos hayamos logueado, aparecerá la pantalla de nuestro index.php definido anteriormente:
+<img alt="alt text" src="../imagenes_actividad_6_3/image-90.png" /></p>
 
 
 
